@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E31B23">
+<title>Parle UDAY Sales</title>
+<style>
+:root{--red:#E31B23;--red-d:#B5121B;--red-l:#FDECEC;--gold:#FFC72C;--gold-l:#FFF8E1;--green:#7DB52A;--green-d:#3F6F0C;--green-l:#F1F8E6;--ink:#121212;--text:#1F2937;--muted:#6B7280;--line:#E5E7EB;--bg:#F4F5F7;--card:#FFFFFF;--amber:#B45309;--amber-l:#FFF4E5;--blue:#1D4ED8;--blue-l:#EFF4FF}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body.has-bar{padding-bottom:150px}
+button,input,select,textarea{font:inherit;color:inherit}
+input,select,textarea{width:100%;font-size:16px;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:10px;background:#fff;min-height:44px;-webkit-appearance:none;appearance:none}
+select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23111' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 12px center;padding-right:34px}
+textarea{min-height:64px;resize:vertical}
+input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;-webkit-appearance:checkbox;appearance:auto;accent-color:var(--red);flex:none}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(227,27,35,.14)}
+input.bad{border-color:var(--red);background:var(--red-l)}
+[hidden]{display:none!important}
+a{color:var(--blue)}
+h1,h2,h3{margin:0}
+.muted{color:var(--muted)}.small{font-size:12.5px}.strong{font-weight:700}.nowrap{white-space:nowrap}
+.wrap{max-width:900px;margin:0 auto;padding:12px}
+/* language switch */
+.lang{display:inline-flex;border:1.5px solid #CBD5E1;border-radius:8px;overflow:hidden;flex:none}
+.lang button{border:0;background:#fff;padding:5px 9px;font-size:12.5px;font-weight:800;cursor:pointer;min-height:32px;color:var(--muted)}
+.lang button.on{background:var(--ink);color:var(--gold)}
+.top .lang{border-color:rgba(255,255,255,.45)}
+.top .lang button{background:rgba(0,0,0,.22);color:#fff}
+.top .lang button.on{background:#fff;color:var(--red-d)}
+/* screens before login */
+.screen{min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:28px 16px;background:linear-gradient(160deg,#E31B23 0%,#B5121B 55%,#7A0C12 100%)}
+.screen .card{width:100%;max-width:420px;margin-top:4vh}
+.logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.logo .grow{flex:1;min-width:0}
+.badge{background:var(--ink);color:var(--gold);font-weight:900;padding:5px 9px;border-radius:8px;border:2px solid var(--gold);letter-spacing:.8px;font-size:15px}
+.badge b{color:var(--green)}
+.logo .t1{font-weight:800;font-size:17px}
+.logo .t2{font-size:12.5px;color:var(--muted)}
+.boot{min-height:100vh;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+/* header */
+.top{position:sticky;top:0;z-index:50;background:linear-gradient(135deg,#E31B23,#C8102E);color:#fff;border-bottom:3px solid var(--gold)}
+.top-in{max-width:900px;margin:0 auto;padding:10px 12px 6px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.brand{display:flex;align-items:center;gap:9px;min-width:0}
+.brand .t1{font-weight:800;font-size:15px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .t2{font-size:12px;color:#FFE4E6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:430px){.top .badge{display:none}}
+.top-actions{display:flex;gap:6px;align-items:center}
+.ghost{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:8px;padding:6px 10px;font-size:12.5px;font-weight:700;cursor:pointer;min-height:34px;white-space:nowrap}
+.tabs{max-width:900px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;padding:0 8px 8px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:0;background:rgba(255,255,255,.14);color:#fff;font-weight:700;font-size:13.5px;padding:8px 13px;border-radius:999px;cursor:pointer;min-height:36px}
+.tab.on{background:#fff;color:var(--red-d)}
+.demo-banner{background:var(--ink);color:var(--gold);font-size:12.5px;text-align:center;padding:6px 10px}
+.demo-banner a{color:#fff}
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.accent-red{border-top:4px solid var(--red)}.accent-gold{border-top:4px solid var(--gold)}.accent-green{border-top:4px solid var(--green)}.accent-ink{border-top:4px solid var(--ink)}
+.card-h{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid #F1F2F4}
+.card-h h2{font-size:16px;font-weight:800;color:var(--ink)}
+.sub-h{font-weight:800;margin:14px 0 8px;display:flex;align-items:center;gap:6px}
+.field{margin-bottom:10px}
+.lbl{display:block;font-size:12.5px;font-weight:700;color:#334155;margin-bottom:4px}
+.strong-red{color:var(--red)}
+.hint{font-size:12px;color:var(--muted);margin-top:3px;min-height:15px}
+.hint.err{color:var(--red);font-weight:700}
+.grid2,.grid3{display:grid;gap:0 10px;grid-template-columns:1fr}
+@media(min-width:560px){.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr 1fr 1fr}}
+.qty{grid-template-columns:1fr 1fr!important}
+.rel{position:relative}
+.check{display:flex;align-items:center;gap:8px;font-size:13.5px;margin:2px 0 10px;cursor:pointer}
+/* buttons */
+.btn{border:0;border-radius:10px;padding:11px 14px;font-weight:800;font-size:14.5px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;text-decoration:none;color:var(--ink)}
+.btn:active{transform:translateY(1px)}
+.btn[disabled]{opacity:.55;cursor:default}
+.btn.block{width:100%}
+.btn.red{background:var(--red);color:#fff}.btn.green{background:var(--green);color:var(--ink)}.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.dark{background:#262626;color:#fff}.btn.wa{background:#25D366;color:#06301A}
+.btn.ghost-dark{background:#fff;border:1.5px solid var(--ink)}
+.btn.small{padding:6px 10px;font-size:12.5px;min-height:34px;border-radius:8px}
+.btn.link{background:none;color:var(--blue);padding:4px 6px;min-height:30px;font-weight:700}
+.btn-row{display:flex;gap:8px;flex-wrap:wrap}
+.btn-row .btn{flex:1}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}
+.seg button{border:1.5px solid #CBD5E1;background:#F8FAFC;border-radius:10px;padding:9px 4px;font-weight:700;font-size:13px;cursor:pointer;min-height:44px}
+.seg button.on{background:var(--red);border-color:var(--red);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.chips.scroll{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-bottom:8px}
+.chip{border:1px solid #CBD5E1;background:#F8FAFC;border-radius:999px;padding:6px 11px;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--ink);color:var(--gold);border-color:var(--ink)}
+.chip .n{background:var(--red);color:#fff;border-radius:99px;padding:0 6px;margin-left:4px;font-size:11px}
+.pill{display:inline-block;background:var(--ink);color:var(--gold);border-radius:99px;padding:1px 8px;font-size:12px;font-weight:800}
+/* GPS */
+.gps-row{display:flex;gap:10px;align-items:center;margin-bottom:12px;background:var(--gold-l);border:1px dashed #E8B400;border-radius:10px;padding:8px}
+.gps-row .btn{flex:none}
+.gps-status{font-size:13px;font-weight:600}
+.gps-status.ok{color:var(--green-d)}.gps-status.err{color:var(--red)}.gps-status.wait{color:var(--amber)}
+/* partner suggestions */
+.suggest{position:absolute;left:0;right:0;top:100%;z-index:30;background:#fff;border:1.5px solid var(--ink);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.15);max-height:260px;overflow:auto;margin-top:2px}
+.suggest button{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid var(--line);background:#fff;padding:9px 12px;cursor:pointer}
+.suggest button:last-child{border-bottom:0}
+.suggest small{display:block;color:var(--muted);font-size:12px}
+/* SKU info + lines */
+.sku-select{font-weight:700;border-color:var(--ink)}
+.sku-info{border-radius:10px;padding:9px 11px;margin-bottom:10px;font-size:13.5px;border:1px solid var(--line);background:#FAFAFA}
+.sku-info.ok{background:var(--green-l);border-color:#C5E39A}
+.sku-info.low{background:var(--amber-l);border-color:#F3C98B}
+.sku-info.out,.sku-info.blocked{background:var(--red-l);border-color:#F5B5B8}
+.sku-info b.big{font-size:18px}
+.drawer{background:var(--amber-l);border:1px dashed #F3C98B;border-radius:10px;padding:8px 10px 0;margin-bottom:10px}
+.lines{display:flex;flex-direction:column;gap:6px}
+.line{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;display:flex;gap:8px;align-items:flex-start}
+.line .main{flex:1;min-width:0}
+.line .nm{font-weight:700;font-size:14px}
+.line .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.tag{font-size:12px;border-radius:6px;padding:2px 7px;font-weight:700;background:#F1F5F9}
+.tag.o{background:var(--green-l);color:var(--green-d)}.tag.s{background:var(--gold-l);color:#7A5600}.tag.w{background:var(--red-l);color:var(--red-d)}
+.empty{color:var(--muted);text-align:center;padding:14px 6px;font-size:13.5px}
+/* browse cards */
+.bcard{border:1.5px solid var(--line);border-radius:10px;padding:10px;margin-bottom:8px;background:#fff}
+.bcard.on{border-color:var(--green);background:#FBFDF7}
+.bcard.blocked,.bcard.out{background:#FCFCFC}
+.bcard .row1{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;margin-bottom:8px}
+.bcard .nm{font-weight:800;font-size:14px}
+.bcard .meta{font-size:12px;color:var(--muted)}
+.st{font-size:11.5px;font-weight:800;border-radius:6px;padding:3px 7px;white-space:nowrap}
+.st.ok{background:var(--green-l);color:var(--green-d)}.st.low{background:var(--amber-l);color:var(--amber)}.st.out,.st.blocked{background:var(--red-l);color:var(--red-d)}
+.st.New{background:var(--blue-l);color:var(--blue)}.st.Confirmed{background:var(--gold-l);color:#7A5600}.st.Despatched{background:var(--green-l);color:var(--green-d)}.st.Cancelled{background:#F1F5F9;color:var(--muted)}
+.bcard .ins{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.bcard .ins label{font-size:11.5px;font-weight:700;color:#334155}
+/* bottom bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);color:#fff;border-top:3px solid var(--red);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+.bar-in{max-width:900px;margin:0 auto}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-size:11.5px;margin-bottom:7px}
+.kpis span{display:block;color:#9CA3AF}
+.kpis b{color:var(--gold);font-size:14px}
+.kpis small{color:#9CA3AF;margin-left:3px}
+.bar-btns{display:flex;gap:6px}
+.bar-btns .grow{flex:1}
+/* sheet (dialog) */
+.sheet-bg{position:fixed;inset:0;z-index:90;background:rgba(17,17,17,.6);display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:#fff;width:100%;max-width:620px;max-height:92vh;overflow:auto;border-radius:16px 16px 0 0;padding:14px 14px calc(16px + env(safe-area-inset-bottom));border-top:5px solid var(--red)}
+@media(min-width:700px){.sheet-bg{align-items:center}.sheet{border-radius:16px}}
+.sheet-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px}
+.sheet-h b{font-size:16px}
+.x{border:0;background:#F1F5F9;border-radius:99px;width:34px;height:34px;font-size:16px;cursor:pointer;flex:none}
+.rl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:2px 0 8px}
+pre.msg{white-space:pre-wrap;background:#F8FAFC;border:1px solid var(--line);border-radius:10px;padding:10px;font:12.5px/1.45 ui-monospace,Menlo,Consolas,monospace;max-height:40vh;overflow:auto;margin:8px 0}
+.ok-box{background:var(--green-l);border:1px solid #C5E39A;border-radius:10px;padding:10px;margin-bottom:10px}
+.err-box{background:var(--red-l);border:1px solid #F5B5B8;border-radius:10px;padding:10px;margin-bottom:10px;color:#7F1D1D}
+.warn-box{background:var(--amber-l);border:1px solid #F3C98B;border-radius:10px;padding:10px;margin-bottom:10px;color:#7C2D12}
+.msgline{font-size:13.5px;margin-top:8px;min-height:18px}
+.msgline.err{color:var(--red);font-weight:700}.msgline.ok{color:var(--green-d);font-weight:700}
+/* toast */
+#toast{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:120;background:var(--ink);color:#fff;padding:10px 14px;border-radius:10px;font-size:14px;font-weight:600;max-width:92vw;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:opacity .2s;opacity:0;pointer-events:none}
+#toast.show{opacity:1}
+#toast.err{background:var(--red-d)}
+/* stock, orders, team */
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+@media(min-width:620px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+.tile span{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.tile b{font-size:20px;color:var(--ink)}
+.tile small{display:block;color:var(--muted);font-size:12px}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.filters .full{grid-column:1/-1}
+@media(min-width:620px){.filters{grid-template-columns:2fr 1fr 1fr}.filters .full{grid-column:auto}}
+.srow{display:flex;justify-content:space-between;gap:10px;padding:9px 2px;border-bottom:1px solid #F1F2F4;align-items:center}
+.srow .l{min-width:0;flex:1}
+.srow .nm{font-weight:700;font-size:14px}
+.srow .meta{font-size:12px;color:var(--muted)}
+.srow .r{text-align:right;flex:none}
+.srow .r b{font-size:17px;color:var(--ink)}
+.brow{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 2px;border-bottom:1px solid #F1F2F4}
+.brow .nm{font-weight:700}
+.ocard{border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ocard .h{display:flex;gap:8px;align-items:flex-start}
+.ocard .h .main{flex:1;min-width:0}
+.ocard .nm{font-weight:800}
+.ocard .meta{font-size:12.5px;color:var(--muted)}
+.ocard details summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--blue);margin-top:6px}
+table.t{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+table.t th,table.t td{text-align:left;padding:6px 5px;border-bottom:1px solid #F1F2F4;vertical-align:top}
+table.t th{font-size:12px;color:var(--muted);font-weight:700}
+table.t td.n,table.t th.n{text-align:right}
+.tscroll{overflow-x:auto}
+.bulk{position:sticky;top:96px;z-index:20;background:var(--ink);color:#fff;border-radius:10px;padding:8px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.bulk .btn{min-height:34px;padding:6px 10px;font-size:12.5px}
+.pcard{border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:8px;background:#fff;display:flex;gap:10px}
+.pcard.idle{background:#FAFAFA}
+.dot{width:12px;height:12px;border-radius:99px;flex:none;margin-top:4px}
+.pcard .main{flex:1;min-width:0}
+.pcard .nums{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;margin-top:3px}
+.pcard .nums b{color:var(--ink)}
+#teamMap{height:320px;border-radius:12px;border:1px solid var(--line);margin-bottom:12px;background:#E5E7EB}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13.5px}
+.kv span{color:var(--muted)}
+.urow{display:flex;gap:8px;align-items:center;padding:9px 2px;border-bottom:1px solid #F1F2F4}
+.urow .main{flex:1;min-width:0}
+.role{font-size:11px;font-weight:800;border-radius:6px;padding:2px 6px;text-transform:uppercase}
+.role.admin{background:var(--ink);color:var(--gold)}.role.manager{background:var(--blue-l);color:var(--blue)}.role.officer{background:var(--green-l);color:var(--green-d)}
+.off{opacity:.5}
+code.c{background:#F1F5F9;border-radius:5px;padding:1px 5px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div id="boot" class="boot">Loading Parle UDAY Sales…</div>
+
+<!-- Connect (only when this file is opened without its server) -->
+<div class="screen" id="scr-connect" hidden>
+  <div class="card">
+    <div class="logo"><span class="badge">U<b>D</b>AY</span><div class="grow"><div class="t1">Parle UDAY Sales</div><div class="t2">Connect this app</div></div><div class="lang" data-dyn><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div></div>
+    <p class="small" data-th="connectIntro"></p>
+    <div class="field"><label class="lbl" for="cUrl">Web app link</label><input id="cUrl" type="url" placeholder="https://script.google.com/macros/s/…/exec"></div>
+    <button class="btn red block" id="btnConnect">Connect</button>
+    <div class="msgline" id="connectMsg" data-dyn></div>
+  </div>
+</div>
+
+<!-- First-time setup -->
+<div class="screen" id="scr-setup" hidden>
+  <div class="card">
+    <div class="logo"><span class="badge">U<b>D</b>AY</span><div class="grow"><div class="t1">First-time setup</div><div class="t2">Create the admin login</div></div><div class="lang" data-dyn><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div></div>
+    <p class="small muted" data-th="setupIntro"></p>
+    <div class="field"><label class="lbl" for="sName">Your name</label><input id="sName" autocomplete="name"></div>
+    <div class="field"><label class="lbl" for="sPhone">Your WhatsApp number (this is your login)</label><input id="sPhone" type="tel" inputmode="tel" placeholder="e.g. 225 07 07 12 34 56"></div>
+    <div class="field"><label class="lbl" for="sPw">Password (at least 4 characters)</label><input id="sPw" type="password" autocomplete="new-password"></div>
+    <div class="field"><label class="lbl" for="sPw2">Repeat password</label><input id="sPw2" type="password" autocomplete="new-password"></div>
+    <button class="btn red block" id="btnSetup">Create admin and start</button>
+    <div class="msgline" id="setupMsg" data-dyn></div>
+  </div>
+</div>
+
+<!-- Login -->
+<div class="screen" id="scr-login" hidden>
+  <div class="card">
+    <div class="logo"><span class="badge">U<b>D</b>AY</span><div class="grow"><div class="t1" id="loginCompany" data-dyn>Parle UDAY Sales</div><div class="t2">Visits · stock · orders</div></div><div class="lang" data-dyn><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div></div>
+    <div class="field"><label class="lbl" for="lPhone">WhatsApp number</label><input id="lPhone" type="tel" inputmode="tel" autocomplete="username" placeholder="e.g. 07 07 12 34 56"></div>
+    <div class="field"><label class="lbl" for="lPw">Password</label>
+      <div style="display:flex;gap:6px"><input id="lPw" type="password" autocomplete="current-password"><button class="btn ghost-dark small" id="btnShowPw" type="button" data-dyn>Show</button></div></div>
+    <button class="btn red block" id="btnLogin">Log in</button>
+    <div class="msgline" id="loginMsg" data-dyn></div>
+    <p class="small muted" style="margin-bottom:0">Forgot your password? Ask your admin to reset it.</p>
+  </div>
+</div>
+
+<!-- Change password -->
+<div class="screen" id="scr-pw" hidden>
+  <div class="card">
+    <div class="logo"><span class="badge">U<b>D</b>AY</span><div class="grow"><div class="t1">Set your own password</div><div class="t2" id="pwWho" data-dyn></div></div><div class="lang" data-dyn><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div></div>
+    <p class="small muted" id="pwIntro">Your admin gave you a shared password. Choose your own now; only you will know it.</p>
+    <div class="field" id="pwOldWrap" hidden><label class="lbl" for="pOld">Current password</label><input id="pOld" type="password" autocomplete="current-password"></div>
+    <div class="field"><label class="lbl" for="pNew">New password (at least 4 characters)</label><input id="pNew" type="password" autocomplete="new-password"></div>
+    <div class="field"><label class="lbl" for="pNew2">Repeat new password</label><input id="pNew2" type="password" autocomplete="new-password"></div>
+    <div class="btn-row"><button class="btn ghost-dark" id="btnPwCancel" hidden>Cancel</button><button class="btn red" id="btnPwSave">Save password</button></div>
+    <div class="msgline" id="pwMsg" data-dyn></div>
+  </div>
+</div>
+
+<!-- App -->
+<div id="shell" hidden>
+  <header class="top">
+    <div class="top-in">
+      <div class="brand"><span class="badge">U<b>D</b>AY</span><div style="min-width:0"><div class="t1" id="hdrCompany" data-dyn>Parle UDAY Sales</div><div class="t2" id="hdrWho" data-dyn></div></div></div>
+      <div class="top-actions"><div class="lang" data-dyn><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div><button class="ghost" id="btnMyPw" title="Change password">🔑</button><button class="ghost" id="btnLogout">Log out</button></div>
+    </div>
+    <nav class="tabs" id="tabs" data-dyn></nav>
+  </header>
+  <div class="demo-banner" id="demoBanner" hidden>DEMO · data stays on this device only · <a href="#" id="demoReset">Reset demo data</a></div>
+
+  <main class="wrap">
+    <!-- ORDER -->
+    <section class="view" id="v-order" hidden>
+      <div class="card accent-red">
+        <div class="card-h"><h2>1. Visit &amp; partner</h2><span class="small muted" id="checkInLine" data-dyn></span></div>
+        <div class="gps-row">
+          <button class="btn gold" id="btnGps" type="button">📍 GPS</button>
+          <div class="gps-status" id="gpsStatus" data-dyn></div>
+        </div>
+        <label class="lbl">Partner type *</label>
+        <div class="seg" id="tierSeg">
+          <button type="button" data-tier="Distributor">🏢 Distributor</button>
+          <button type="button" data-tier="Wholesaler">🏪 Wholesaler</button>
+          <button type="button" data-tier="Semi-Wholesaler">🏬 Semi-Wholesaler</button>
+        </div>
+        <div class="field rel">
+          <label class="lbl" for="fPartner"><span>Partner / shop name *</span> <span class="muted">(type any name)</span></label>
+          <input id="fPartner" autocomplete="off" autocapitalize="words" placeholder="e.g. Ets Kouassi &amp; Fils">
+          <div class="suggest" id="partnerSuggest" data-dyn hidden></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label class="lbl" for="fPartnerPhone">Partner phone / WhatsApp</label><input id="fPartnerPhone" type="tel" inputmode="tel" placeholder="Optional"></div>
+          <div class="field"><label class="lbl" for="fOrderRef">Order ref / invoice no.</label><input id="fOrderRef" placeholder="Optional"></div>
+        </div>
+        <div class="field" style="margin-bottom:0"><label class="lbl" for="fLocation">Market / area *</label>
+          <input id="fLocation" placeholder="Filled by GPS, or type the market">
+          <div class="chips" id="zoneChips" data-dyn></div>
+        </div>
+      </div>
+
+      <div class="card accent-gold">
+        <div class="card-h"><h2>2. Payment &amp; market notes</h2></div>
+        <div class="grid3">
+          <div class="field"><label class="lbl" for="fPay">💰 Payment collected</label><input id="fPay" type="number" inputmode="decimal" min="0" placeholder="0"></div>
+          <div class="field"><label class="lbl" for="fPayMode">Payment mode</label><select id="fPayMode" data-dyn></select></div>
+          <div class="field"><label class="lbl" for="fPayRef">Receipt / transaction ref</label><input id="fPayRef" placeholder="Optional"></div>
+        </div>
+        <div class="field" style="margin-bottom:0"><label class="lbl" for="fNotes">🕵️ Competitor &amp; market notes</label>
+          <textarea id="fNotes" rows="2" placeholder="Competitor prices, schemes, stock-outs, display…"></textarea>
+          <div class="chips" id="noteChips" data-dyn></div>
+        </div>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-h"><h2>3. Add SKUs</h2><span class="small muted" id="stockAsOfMini" data-dyn></span></div>
+        <div class="grid2">
+          <div class="field"><label class="lbl" for="qBrand">Category / brand</label><select id="qBrand" data-dyn></select></div>
+          <div class="field"><label class="lbl" for="qSearch">Search SKU</label><input id="qSearch" type="search" placeholder="Name, pack or SAP code"></div>
+        </div>
+        <label class="check"><input type="checkbox" id="qAvailOnly" checked> Show only SKUs the plant has in stock</label>
+        <div class="field"><label class="lbl strong-red" for="qSku">📦 Select SKU *</label><select id="qSku" class="sku-select" data-dyn></select></div>
+        <div class="sku-info" id="qInfo" data-dyn hidden></div>
+        <div class="grid2 qty">
+          <div class="field"><label class="lbl" for="qShop">📦 Shop stock counted (box)</label><input id="qShop" type="number" inputmode="numeric" pattern="[0-9]*" min="0" placeholder="Boxes on shelf"><div class="hint" id="qShopKg" data-dyn></div></div>
+          <div class="field"><label class="lbl" for="qOrder">🛒 New order (box)</label><input id="qOrder" type="number" inputmode="numeric" pattern="[0-9]*" min="0" placeholder="Boxes to order"><div class="hint" id="qOrderHint" data-dyn></div></div>
+          <div class="field"><label class="lbl" for="qPrev">☑️ Previous order sent (box)</label><input id="qPrev" type="number" inputmode="numeric" pattern="[0-9]*" min="0" placeholder="Optional"></div>
+          <div class="field"><label class="lbl" for="qStatus">📋 Previous order supply</label><select id="qStatus" data-dyn></select></div>
+        </div>
+        <div class="grid3 drawer" id="qDrawer" hidden>
+          <div class="field"><label class="lbl" for="qShort">Short boxes</label><input id="qShort" type="number" inputmode="numeric" pattern="[0-9]*" min="0" placeholder="0"></div>
+          <div class="field"><label class="lbl" for="qReason">Reason</label><select id="qReason" data-dyn></select></div>
+          <div class="field"><label class="lbl" for="qRemark">SKU remark</label><input id="qRemark" placeholder="Optional"></div>
+        </div>
+        <button class="btn red block" id="btnAddLine" type="button">➕ Add / update in this visit</button>
+        <div class="sub-h"><span>This visit</span> <span class="pill" id="visitCount" data-dyn>0</span></div>
+        <div class="lines" id="visitLines" data-dyn></div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><h2>4. Browse all SKUs</h2><button class="btn small ghost-dark" id="btnBrowse" type="button" data-dyn>Show list</button></div>
+        <div id="browseBox" hidden>
+          <input id="bSearch" type="search" placeholder="🔍 Filter by name, pack or SAP code" style="margin-bottom:8px">
+          <div class="chips scroll" id="bBrands" data-dyn></div>
+          <label class="check"><input type="checkbox" id="bAvailOnly" checked> Only SKUs the plant has in stock</label>
+          <div id="bList" data-dyn></div>
+          <button class="btn ghost-dark block" id="bMore" type="button" data-dyn hidden>Show more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STOCK -->
+    <section class="view" id="v-stock" hidden>
+      <div class="card accent-gold">
+        <div class="card-h"><h2>Plant stock available</h2><button class="btn small ghost-dark" id="btnStockRefresh" type="button">↻ Refresh</button></div>
+        <div class="small" id="stockMeta" data-dyn></div>
+      </div>
+      <div class="tiles" id="stockTiles" data-dyn></div>
+      <div class="card">
+        <div class="card-h"><h2>By category</h2><button class="btn small link" id="btnCatToggle" type="button" data-dyn>Show</button></div>
+        <div id="catList" data-dyn hidden></div>
+      </div>
+      <div class="card">
+        <div class="filters">
+          <input class="full" id="sSearch" type="search" placeholder="🔍 SKU name, pack or SAP code">
+          <select id="sBrand" data-dyn></select>
+          <select id="sStatus">
+            <option value="avail">In stock</option><option value="">All SKUs</option><option value="low">Low stock</option><option value="out">Out of stock</option><option value="blocked">Not available (blocked)</option>
+          </select>
+        </div>
+        <div id="sList" data-dyn></div>
+        <button class="btn ghost-dark block" id="sMore" type="button" data-dyn hidden>Show more</button>
+      </div>
+    </section>
+
+    <!-- ORDERS -->
+    <section class="view" id="v-orders" hidden>
+      <div class="card accent-ink">
+        <div class="card-h"><h2 id="ordersTitle" data-dyn>Orders</h2><button class="btn small ghost-dark" id="btnCsv" type="button">⬇ CSV</button></div>
+        <div class="filters">
+          <div class="grid2 full" style="gap:8px"><div><label class="lbl" for="oFrom">From</label><input id="oFrom" type="date"></div><div><label class="lbl" for="oTo">To</label><input id="oTo" type="date"></div></div>
+          <select id="oOfficer" data-dyn></select>
+          <select id="oStatus"><option value="">All statuses</option><option value="New">New</option><option value="Confirmed">Confirmed</option><option value="Despatched">Despatched</option><option value="Cancelled">Cancelled</option></select>
+        </div>
+        <button class="btn dark block" id="btnOrdersLoad" type="button">Show orders</button>
+        <div class="small muted" id="ordersSum" data-dyn style="margin-top:8px"></div>
+      </div>
+      <div class="bulk" id="bulkBar" hidden>
+        <b id="bulkCount" data-dyn>0</b>
+        <button class="btn gold" data-bulk="Confirmed" type="button">Confirm</button>
+        <button class="btn green" data-bulk="Despatched" type="button">Mark despatched</button>
+        <button class="btn red" data-bulk="Cancelled" type="button">Cancel</button>
+        <button class="btn link" id="bulkClear" type="button" style="color:#fff">Clear</button>
+      </div>
+      <div id="oList" data-dyn></div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="view" id="v-team" hidden>
+      <div class="card accent-ink">
+        <div class="card-h"><h2>Team tracker</h2><button class="btn small ghost-dark" id="btnTeamRefresh" type="button">↻ Refresh</button></div>
+        <label class="lbl" for="tDate">Day</label><input id="tDate" type="date">
+      </div>
+      <div class="tiles" id="teamTiles" data-dyn></div>
+      <div id="teamMap" data-dyn hidden></div>
+      <div class="card"><div class="card-h"><h2>Sales officers</h2><span class="small muted">Last line: last 7 days</span></div><div id="teamPeople" data-dyn></div></div>
+      <div class="card"><div class="card-h"><h2>Visits on this day</h2></div><div id="teamVisits" data-dyn></div></div>
+    </section>
+
+    <!-- ADMIN -->
+    <section class="view" id="v-admin" hidden>
+      <div class="card accent-red">
+        <div class="card-h"><h2>Upload plant stock</h2></div>
+        <p class="small" style="margin-top:0" data-th="uploadIntro"></p>
+        <div class="grid2">
+          <div class="field"><label class="lbl" for="uAsOf">Stock as of</label><input id="uAsOf" type="date"></div>
+          <div class="field"><label class="lbl" for="uFile">Excel or CSV file</label><input id="uFile" type="file" accept=".xlsx,.xls,.csv"></div>
+        </div>
+        <label class="check"><input type="checkbox" id="uZero" checked> SKUs missing from the file → set plant stock to 0</label>
+        <div id="uPreview" data-dyn></div>
+        <div class="msgline" id="uMsg" data-dyn></div>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-h"><h2>Team logins</h2><span class="small muted">Login = WhatsApp number + password</span></div>
+        <div class="grid2">
+          <div class="field"><label class="lbl" for="aPhone">WhatsApp number *</label><input id="aPhone" type="tel" inputmode="tel" placeholder="e.g. 07 07 12 34 56"></div>
+          <div class="field"><label class="lbl" for="aName">Name *</label><input id="aName" autocapitalize="words"></div>
+          <div class="field"><label class="lbl" for="aRole">Role</label><select id="aRole"><option value="officer">Sales officer</option><option value="manager">Manager</option><option value="admin">Admin</option></select></div>
+          <div class="field"><label class="lbl" for="aZone">Zone / territory</label><input id="aZone" placeholder="e.g. Abidjan North"></div>
+          <div class="field"><label class="lbl" for="aPw">Password</label><input id="aPw" type="text" autocomplete="off" placeholder="Blank = general password"></div>
+          <div class="field" style="display:flex;flex-direction:column;justify-content:center">
+            <label class="check" style="margin:0 0 6px"><input type="checkbox" id="aMust" checked> Ask them to set their own password at first login</label>
+            <label class="check" style="margin:0"><input type="checkbox" id="aActive" checked> Login active</label>
+          </div>
+        </div>
+        <div class="btn-row"><button class="btn ghost-dark" id="btnUserClear" type="button">Clear</button><button class="btn red" id="btnUserSave" type="button">Save login</button></div>
+        <div class="msgline" id="userMsg" data-dyn></div>
+        <div id="userShare" data-dyn></div>
+        <div class="sub-h"><span>People</span> <span class="pill" id="userCount" data-dyn>0</span></div>
+        <div id="userList" data-dyn></div>
+      </div>
+
+      <div class="card accent-gold">
+        <div class="card-h"><h2>Settings</h2></div>
+        <div class="grid2">
+          <div class="field"><label class="lbl" for="gCompany">App name</label><input id="gCompany"></div>
+          <div class="field"><label class="lbl" for="gPw">General password for new logins</label><input id="gPw" type="text" autocomplete="off" placeholder="e.g. Uday2026"></div>
+          <div class="field"><label class="lbl" for="gDesk">Order desk WhatsApp number</label><input id="gDesk" type="tel" inputmode="tel" placeholder="Where officers send orders"></div>
+          <div class="field"><label class="lbl" for="gDeskLabel">Order desk name</label><input id="gDeskLabel" placeholder="Order Desk"></div>
+          <div class="field"><label class="lbl" for="gLow">Low-stock warning below (boxes)</label><input id="gLow" type="number" inputmode="numeric" min="0"></div>
+          <div class="field"><label class="lbl" for="gCc">Country code for 10-digit numbers</label><input id="gCc" type="tel" inputmode="numeric" placeholder="225"></div>
+        </div>
+        <button class="btn red" id="btnSettingsSave" type="button">Save settings</button>
+        <div class="msgline" id="settingsMsg" data-dyn></div>
+      </div>
+
+      <div class="card accent-ink">
+        <div class="card-h"><h2>App link &amp; data</h2></div>
+        <div id="linkBox" data-dyn></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="bar" id="orderBar" hidden>
+    <div class="bar-in">
+      <div class="kpis">
+        <div><span>SKUs</span><b id="kSku" data-dyn>0</b></div>
+        <div><span>🛒 Order</span><b id="kOrder" data-dyn>0</b><small>box</small><small id="kOrderKg" data-dyn style="display:block;margin:0">0 kg</small></div>
+        <div><span>📦 Shop stock</span><b id="kShop" data-dyn>0</b><small>box</small></div>
+        <div><span>💰 Payment</span><b id="kPay" data-dyn>0</b></div>
+      </div>
+      <div class="bar-btns">
+        <button class="btn dark" id="btnPreview" type="button">👁 Preview</button>
+        <button class="btn green grow" id="btnSubmit" type="button">✅ Submit order</button>
+        <button class="btn red" id="btnReset" type="button" title="Clear this visit">↺</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sheet-bg" id="sheet" hidden><div class="sheet" role="dialog" aria-modal="true"><div class="sheet-h"><b id="sheetTitle" data-dyn></b><button class="x" id="sheetClose" type="button" aria-label="Close">✕</button></div><div id="sheetBody" data-dyn></div></div></div>
+<div id="toast" data-dyn></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Option B only: when this file is hosted outside Google, paste the Apps Script web app link (ending /exec) here. */
+  var API_URL = 'https://script.google.com/macros/s/AKfycbxrU19Gi6FLAVyJ-RZvm4Fr2cCzQ0cRSDahBhNB9nvOx5dmEojlJbxt0_mfVrnR0wgtvg/exec';
+
+  var XLSX_URL = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+  var LEAFLET_JS = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+  var LEAFLET_CSS = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+
+  // Stored values stay in English (the sheet stays consistent); t() translates them for display.
+  var TIERS = ['Distributor', 'Wholesaler', 'Semi-Wholesaler'];
+  var ZONES = ['Abidjan - Adjamé', 'Abidjan - Abobo', 'Abidjan - Treichville', 'Abidjan - Yopougon', 'Bonoua', 'Dabou', 'San Pedro', 'Yamoussoukro'];
+  var PAY_MODES = ['None / No Payment', 'Cash', 'Mobile Money (Wave / Orange / MTN)', 'Bank Transfer', 'Cheque', 'Credit / Pending'];
+  var SUPPLY = [['Supplied', '✅ Supplied / full'], ['Short Supplied', '⚠️ Short supplied'], ['Not Supplied', '❌ Not supplied']];
+  var SHORT_REASONS = ['Factory / Depot Out of Stock', 'Transport / Dispatch Delay', 'Credit Limit / Payment Hold', 'Price / Margin Dispute', 'Damaged Cartons in Transit', 'Distributor Stockout', 'Order Placed Late', 'Other (See Notes)'];
+  var NOTE_TAGS = ['Competitor offering extra wholesale margin. ', 'New competitor biscuit SKU spotted. ', 'Competitor stock high; pushing credit. ', "High demand for O'Choco & Parle-G packs. "];
+  var ROLE_LABEL = { admin: 'Admin', manager: 'Manager', officer: 'Sales officer' };
+  var COLORS = ['#E31B23', '#1D4ED8', '#16A34A', '#9333EA', '#EA580C', '#0891B2', '#CA8A04', '#DB2777', '#4B5563', '#65A30D'];
+  var PAGE = 40;
+
+  /* ---------- helpers ---------- */
+  function $(s, el) { return (el || document).querySelector(s); }
+  function $$(s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); }
+  function esc(s) { return String(s === null || s === undefined ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function int(v) { var n = parseInt(String(v === undefined || v === null ? '' : v).replace(/[^0-9-]/g, ''), 10); return isFinite(n) ? n : 0; }
+  function numv(v) { var n = parseFloat(String(v === undefined || v === null ? '' : v).replace(/[^0-9.-]/g, '')); return isFinite(n) ? n : 0; }
+  var store = {
+    get: function (k, d) { try { var v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } },
+    del: function (k) { try { localStorage.removeItem(k); } catch (e) { /* storage blocked */ } }
+  };
+
+  /* ---------- language ---------- */
+  var LANG = store.get('uday_lang', null) || (String(navigator.language || '').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+  var FR = {
+    // screens before login
+    'Loading Parle UDAY Sales…': 'Chargement de Parle UDAY Ventes…',
+    'Parle UDAY Sales': 'Parle UDAY Ventes',
+    '{name} Sales': '{name} Ventes',
+    'Connect this app': 'Connecter cette application',
+    'Web app link': "Lien de l'application web",
+    'Connect': 'Connecter',
+    'Paste the full https://script.google.com/…/exec link.': 'Collez le lien complet https://script.google.com/…/exec.',
+    'First-time setup': 'Première configuration',
+    'Create the admin login': "Créer l'accès administrateur",
+    'Your name': 'Votre nom',
+    'Your WhatsApp number (this is your login)': "Votre numéro WhatsApp (c'est votre identifiant)",
+    'Password (at least 4 characters)': 'Mot de passe (au moins 4 caractères)',
+    'Repeat password': 'Répéter le mot de passe',
+    'Create admin and start': "Créer l'admin et démarrer",
+    'Visits · stock · orders': 'Visites · stock · commandes',
+    'WhatsApp number': 'Numéro WhatsApp',
+    'Password': 'Mot de passe',
+    'Show': 'Afficher',
+    'Hide': 'Masquer',
+    'Log in': 'Se connecter',
+    'Forgot your password? Ask your admin to reset it.': 'Mot de passe oublié ? Demandez à votre admin de le réinitialiser.',
+    'e.g. 07 07 12 34 56': 'ex. 07 07 12 34 56',
+    'e.g. 225 07 07 12 34 56': 'ex. 225 07 07 12 34 56',
+    'Set your own password': 'Choisissez votre mot de passe',
+    'Your admin gave you a shared password. Choose your own now; only you will know it.': 'Votre admin vous a donné un mot de passe commun. Choisissez le vôtre maintenant ; vous seul le connaîtrez.',
+    'Current password': 'Mot de passe actuel',
+    'New password (at least 4 characters)': 'Nouveau mot de passe (au moins 4 caractères)',
+    'Repeat new password': 'Répéter le nouveau mot de passe',
+    'Cancel': 'Annuler',
+    'Save password': 'Enregistrer le mot de passe',
+    'Enter your WhatsApp number and password.': 'Saisissez votre numéro WhatsApp et votre mot de passe.',
+    'Checking…': 'Vérification…',
+    'The two passwords are different.': 'Les deux mots de passe sont différents.',
+    'Admin created. Next: upload plant stock and add your team.': 'Admin créé. Ensuite : chargez le stock usine et ajoutez votre équipe.',
+    'Password saved': 'Mot de passe enregistré',
+    'Manager': 'Superviseur',
+    // header, tabs
+    'Change password': 'Changer le mot de passe',
+    'Log out': 'Quitter',
+    'Log out of the app on this phone?': "Se déconnecter de l'application sur ce téléphone ?",
+    'DEMO · data stays on this device only ·': 'DÉMO · données sur cet appareil uniquement ·',
+    'Reset demo data': 'Réinitialiser la démo',
+    'Delete all demo data on this device and start again?': 'Supprimer toutes les données de démo sur cet appareil et recommencer ?',
+    '📝 New order': '📝 Nouvelle commande',
+    '🧾 My orders': '🧾 Mes commandes',
+    '👥 Team': '👥 Équipe',
+    '🧾 Orders': '🧾 Commandes',
+    'Sales officer': 'Commercial',
+    // order form
+    '1. Visit & partner': '1. Visite & client',
+    'Check-in {t} · {id}': 'Arrivée {t} · {id}',
+    'Location not captured yet. Tap 📍 GPS at the shop.': 'Position pas encore prise. Touchez 📍 GPS à la boutique.',
+    'Partner type *': 'Type de client *',
+    '🏢 Distributor': '🏢 Distributeur',
+    '🏪 Wholesaler': '🏪 Grossiste',
+    '🏬 Semi-Wholesaler': '🏬 Demi-grossiste',
+    'Distributor': 'Distributeur',
+    'Wholesaler': 'Grossiste',
+    'Semi-Wholesaler': 'Demi-grossiste',
+    'Partner / shop name *': 'Nom du client / boutique *',
+    '(type any name)': '(saisie libre)',
+    'e.g. Ets Kouassi & Fils': 'ex. Ets Kouassi & Fils',
+    'Partner phone / WhatsApp': 'Téléphone / WhatsApp du client',
+    'Optional': 'Facultatif',
+    'Order ref / invoice no.': 'Réf. commande / n° facture',
+    'Market / area *': 'Marché / quartier *',
+    'Filled by GPS, or type the market': 'Rempli par le GPS, ou saisir le marché',
+    ' · last visit {t}': ' · dernière visite {t}',
+    '2. Payment & market notes': '2. Paiement & notes marché',
+    '💰 Payment collected': '💰 Paiement encaissé',
+    'Payment mode': 'Mode de paiement',
+    'Receipt / transaction ref': 'Reçu / réf. transaction',
+    '🕵️ Competitor & market notes': '🕵️ Notes concurrence & marché',
+    'Competitor prices, schemes, stock-outs, display…': 'Prix concurrents, promotions, ruptures, présentation…',
+    'None / No Payment': 'Aucun paiement',
+    'Cash': 'Espèces',
+    'Mobile Money (Wave / Orange / MTN)': 'Mobile Money (Wave / Orange / MTN)',
+    'Bank Transfer': 'Virement bancaire',
+    'Cheque': 'Chèque',
+    'Credit / Pending': 'Crédit / en attente',
+    'Competitor offering extra wholesale margin. ': 'Concurrent offre une marge grossiste en plus. ',
+    'New competitor biscuit SKU spotted. ': 'Nouveau biscuit concurrent repéré. ',
+    'Competitor stock high; pushing credit. ': 'Stock concurrent élevé ; pousse le crédit. ',
+    "High demand for O'Choco & Parle-G packs. ": "Forte demande O'Choco et Parle-G. ",
+    '3. Add SKUs': '3. Ajouter des SKU',
+    'Category / brand': 'Catégorie / marque',
+    'Search SKU': 'Rechercher un SKU',
+    'Name, pack or SAP code': 'Nom, format ou code SAP',
+    'Show only SKUs the plant has in stock': "Afficher seulement les SKU en stock à l'usine",
+    '📦 Select SKU *': '📦 Choisir le SKU *',
+    '📦 Shop stock counted (box)': '📦 Stock compté en boutique (cartons)',
+    'Boxes on shelf': 'Cartons en rayon',
+    '🛒 New order (box)': '🛒 Nouvelle commande (cartons)',
+    'Boxes to order': 'Cartons à commander',
+    'Not orderable': 'Non commandable',
+    '☑️ Previous order sent (box)': '☑️ Commande précédente envoyée (cartons)',
+    '📋 Previous order supply': '📋 Livraison commande précédente',
+    'Supplied': 'Livré',
+    'Short Supplied': 'Livré en partie',
+    'Not Supplied': 'Non livré',
+    '✅ Supplied / full': '✅ Livré / complet',
+    '⚠️ Short supplied': '⚠️ Livré en partie',
+    '❌ Not supplied': '❌ Non livré',
+    'Factory / Depot Out of Stock': 'Rupture usine / dépôt',
+    'Transport / Dispatch Delay': 'Retard transport / expédition',
+    'Credit Limit / Payment Hold': 'Plafond de crédit / paiement bloqué',
+    'Price / Margin Dispute': 'Litige prix / marge',
+    'Damaged Cartons in Transit': 'Cartons abîmés en transport',
+    'Distributor Stockout': 'Rupture chez le distributeur',
+    'Order Placed Late': 'Commande passée en retard',
+    'Other (See Notes)': 'Autre (voir notes)',
+    'Short boxes': 'Cartons manquants',
+    'Reason': 'Raison',
+    'SKU remark': 'Remarque SKU',
+    '➕ Add / update in this visit': '➕ Ajouter / modifier dans la visite',
+    'This visit': 'Cette visite',
+    '4. Browse all SKUs': '4. Parcourir tous les SKU',
+    'Show list': 'Afficher la liste',
+    'Hide list': 'Masquer la liste',
+    '🔍 Filter by name, pack or SAP code': '🔍 Filtrer par nom, format ou code SAP',
+    'Only SKUs the plant has in stock': "Seulement les SKU en stock à l'usine",
+    'Show more': 'Afficher plus',
+    'Show more ({n} left)': 'Afficher plus ({n} restants)',
+    'All categories ({a} of {n} SKUs in stock)': 'Toutes catégories ({a} sur {n} SKU en stock)',
+    'No SKUs yet — admin must upload plant stock': "Aucun SKU — l'admin doit charger le stock usine",
+    '— Select SKU ({n} found) —': '— Choisir un SKU ({n} trouvés) —',
+    'No SKU in stock matches — untick the box above': 'Aucun SKU en stock ne correspond — décochez la case ci-dessus',
+    'No SKU matches your search': 'Aucun SKU ne correspond à votre recherche',
+    'not in plant list': 'absent de la liste usine',
+    '⛔ not available': '⛔ non disponible',
+    '⛔ out of stock': '⛔ en rupture',
+    '{b} (low)': '{b} (faible)',
+    'kg/box': 'kg/carton',
+    ' · in this visit: {b}': ' · dans cette visite : {b}',
+    '⛔ Not available': '⛔ Non disponible',
+    'marked by admin': "bloqué par l'admin",
+    '⛔ Out of stock at plant': "⛔ En rupture à l'usine",
+    'you can still record shop stock': 'vous pouvez quand même noter le stock boutique',
+    'Plant stock you can order:': 'Stock usine commandable :',
+    ' · low': ' · faible',
+    'Only {b} available': 'Seulement {b} disponibles',
+    'Only {b} of {name} available': 'Seulement {b} de {name} disponibles',
+    'Select a SKU first': "Choisissez d'abord un SKU",
+    '{name} cannot be ordered: {why}': '{name} ne peut pas être commandé : {why}',
+    'Enter shop stock, order boxes or previous order details': 'Saisissez le stock boutique, les cartons commandés ou la commande précédente',
+    'Removed from visit': 'Retiré de la visite',
+    'Updated {name}': '{name} modifié',
+    'Added {name}': '{name} ajouté',
+    'No SKUs yet. Pick a SKU above, enter boxes and tap “Add”.': 'Aucun SKU. Choisissez un SKU ci-dessus, saisissez les cartons et touchez « Ajouter ».',
+    '🛒 Order {b} · {kg} kg': '🛒 Commande {b} · {kg} kg',
+    '📦 Shop {b}': '📦 Boutique {b}',
+    '☑️ Prev {n}': '☑️ Préc. {n}',
+    '⚠️ Short {n}': '⚠️ Manquant {n}',
+    'Only {b} available now': 'Seulement {b} disponibles maintenant',
+    'Edit': 'Modifier',
+    'Remove': 'Retirer',
+    'All': 'Tout',
+    '📦 Shop stock (box)': '📦 Stock boutique (cartons)',
+    '🛒 Order (box)': '🛒 Commande (cartons)',
+    'n/a': 'n/d',
+    'No SKU matches.': 'Aucun SKU ne correspond.',
+    // GPS
+    '✅ Located ±{a} m at {t} ·': '✅ Localisé ±{a} m à {t} ·',
+    'map': 'carte',
+    'This screen cannot read GPS. Open the app link in Chrome or Safari (not inside a file preview).': "Cet écran ne peut pas lire le GPS. Ouvrez le lien de l'appli dans Chrome ou Safari (pas dans un aperçu de fichier).",
+    'The page hosting the app blocks GPS (phone settings are not the problem). Tell your admin: use option B in the setup guide.': "La page qui héberge l'appli bloque le GPS (les réglages du téléphone ne sont pas en cause). Prévenez votre admin : option B du guide d'installation.",
+    '📡 Finding your location… keep the phone in the open.': '📡 Recherche de votre position… restez à découvert.',
+    'Tap 📍 GPS and allow location.': 'Touchez 📍 GPS et autorisez la localisation.',
+    'Location is blocked. iPhone: Settings › Privacy › Location Services › Safari Websites (or WhatsApp) › While Using. Android: tap 🔒 next to the address › Permissions › Location › Allow. Then tap 📍 GPS again.': "Localisation bloquée. iPhone : Réglages › Confidentialité › Service de localisation › Sites web Safari (ou WhatsApp) › Lorsque l'app est active. Android : touchez 🔒 à côté de l'adresse › Autorisations › Position › Autoriser. Puis touchez 📍 GPS à nouveau.",
+    'No GPS fix. Step outside or turn on Location, then tap 📍 GPS again.': 'Pas de signal GPS. Sortez ou activez la localisation, puis touchez 📍 GPS à nouveau.',
+    'GPS is not allowed on this screen. Open the app link in Chrome or Safari.': "Le GPS n'est pas autorisé sur cet écran. Ouvrez le lien de l'appli dans Chrome ou Safari.",
+    // bottom bar, submit, report sheet
+    'SKUs': 'SKU',
+    '🛒 Order': '🛒 Commande',
+    'box': 'cartons',
+    '📦 Shop stock': '📦 Stock boutique',
+    '💰 Payment': '💰 Paiement',
+    '👁 Preview': '👁 Aperçu',
+    '✅ Submit order': '✅ Valider la commande',
+    'Clear this visit': 'Effacer cette visite',
+    'Close': 'Fermer',
+    'Send report to': 'Envoyer le rapport à',
+    'Report language': 'Langue du rapport',
+    '📲 Open WhatsApp': '📲 Ouvrir WhatsApp',
+    '📋 Copy': '📋 Copier',
+    'Copied': 'Copié',
+    'Copy blocked here: press and hold the text to copy': 'Copie bloquée ici : appuyez longuement sur le texte pour copier',
+    '📲 Choose chat or group inside WhatsApp': '📲 Choisir la discussion ou le groupe dans WhatsApp',
+    'Preview — not saved yet': 'Aperçu — pas encore enregistré',
+    'This is a preview. Tap <b>✅ Submit order</b> to save it, reserve plant stock and then send it on WhatsApp.': "Ceci est un aperçu. Touchez <b>✅ Valider la commande</b> pour l'enregistrer, réserver le stock usine puis l'envoyer sur WhatsApp.",
+    'Enter the partner / shop name': 'Saisissez le nom du client / de la boutique',
+    'Enter the market / area, or tap 📍 GPS': 'Saisissez le marché / quartier, ou touchez 📍 GPS',
+    'Reduce: {list} — more than available': 'Réduisez : {list} — plus que le disponible',
+    'GPS location is not captured. Your manager will see “no GPS” on this visit. Submit anyway?': 'Position GPS non prise. Votre superviseur verra « sans GPS » sur cette visite. Valider quand même ?',
+    'No SKUs entered. Save this as a visit without order?': 'Aucun SKU saisi. Enregistrer comme visite sans commande ?',
+    'Saving…': 'Enregistrement…',
+    'Stock changed — please adjust': 'Le stock a changé — ajustez',
+    'SKU': 'SKU',
+    'Asked': 'Demandé',
+    'Available': 'Disponible',
+    'Set these to the available quantity': 'Mettre ces SKU à la quantité disponible',
+    'Adjusted. Check and submit again.': 'Ajusté. Vérifiez et validez à nouveau.',
+    'Not saved': 'Non enregistré',
+    'Saved ✅': 'Enregistré ✅',
+    '<b>Order {id}</b> saved for {p}.<br>{b} · {kg} kg reserved from plant stock.': '<b>Commande {id}</b> enregistrée pour {p}.<br>{b} · {kg} kg réservés sur le stock usine.',
+    '(Already saved earlier — not saved twice.)': '(Déjà enregistrée — pas de doublon.)',
+    '➕ Start next visit': '➕ Visite suivante',
+    'Clear this visit and start a new one?': 'Effacer cette visite et en commencer une nouvelle ?',
+    'New visit started': 'Nouvelle visite commencée',
+    'No connection to the server. Check mobile data and try again — your entries are kept on this phone.': 'Pas de connexion au serveur. Vérifiez les données mobiles et réessayez — vos saisies restent sur ce téléphone.',
+    'Empty reply from server': 'Réponse vide du serveur',
+    // WhatsApp report
+    'VISIT & ORDER': 'VISITE & COMMANDE',
+    'check-in': 'arrivée',
+    'Sales officer:': 'Commercial :',
+    'Partner:': 'Client :',
+    'Location:': 'Lieu :',
+    'GPS not captured': 'GPS non capturé',
+    'Ref:': 'Réf :',
+    'NEW ORDER: {b} • {kg} kg • {n} SKUs': 'NOUVELLE COMMANDE : {b} • {kg} kg • {n} SKU',
+    'No new order on this visit.': 'Pas de nouvelle commande lors de cette visite.',
+    'SHOP STOCK COUNTED: {b} • {n} SKUs': 'STOCK COMPTÉ EN BOUTIQUE : {b} • {n} SKU',
+    'PREVIOUS ORDER SUPPLY CHECK': 'CONTRÔLE LIVRAISON COMMANDE PRÉCÉDENTE',
+    'prev {b}': 'préc. {b}',
+    'SHORT {b}': 'MANQUANT {b}',
+    'NOT SUPPLIED': 'NON LIVRÉ',
+    'supplied': 'livré',
+    'Payment:': 'Paiement :',
+    'Market notes:': 'Notes marché :',
+    // stock view
+    'Plant stock available': 'Stock usine disponible',
+    '↻ Refresh': '↻ Actualiser',
+    'By category': 'Par catégorie',
+    '🔍 SKU name, pack or SAP code': '🔍 Nom du SKU, format ou code SAP',
+    'In stock': 'En stock',
+    'All SKUs': 'Tous les SKU',
+    'Low stock': 'Stock faible',
+    'Out of stock': 'En rupture',
+    'Not available (blocked)': 'Non disponible (bloqué)',
+    'Plant stock as of {d}': 'Stock usine au {d}',
+    'No plant stock uploaded yet': 'Aucun stock usine chargé',
+    'uploaded {ts} by {who}': 'chargé {ts} par {who}',
+    '“Available” = plant stock − open orders already taken by the team.': '« Disponible » = stock usine − commandes ouvertes déjà prises par l’équipe.',
+    'No plant stock uploaded yet.': 'Aucun stock usine chargé.',
+    'Go to ⚙️ Admin › Upload plant stock.': 'Allez dans ⚙️ Admin › Charger le stock usine.',
+    'Your admin will upload it.': 'Votre admin va le charger.',
+    'SKUs in stock': 'SKU en stock',
+    'of {n}': 'sur {n}',
+    'Boxes available': 'Cartons disponibles',
+    'On open orders': 'Sur commandes ouvertes',
+    'box reserved': 'cartons réservés',
+    'Out / not available': 'Rupture / non dispo',
+    '{a} out · {b} blocked': '{a} en rupture · {b} bloqués',
+    '{a} of {n} SKUs in stock · {b}': '{a} sur {n} SKU en stock · {b}',
+    'Make available': 'Rendre disponible',
+    'Mark not available': 'Marquer non disponible',
+    'No stock yet.': 'Pas encore de stock.',
+    'All categories': 'Toutes catégories',
+    'plant {a} − orders {b}': 'usine {a} − commandes {b}',
+    'Edit stock': 'Modifier le stock',
+    'Low': 'Faible',
+    'Out': 'Rupture',
+    'Not available': 'Non disponible',
+    'No SKU matches these filters.': 'Aucun SKU pour ces filtres.',
+    'Reason shown to officers (optional)': 'Raison affichée aux commerciaux (facultatif)',
+    'Category not available': 'Catégorie non disponible',
+    '{k} marked not available': '{k} marqué non disponible',
+    '{k} is available again': '{k} de nouveau disponible',
+    'Plant stock (boxes) for {name}\nCurrent: {p} (open orders {r})': 'Stock usine (cartons) pour {name}\nActuel : {p} (commandes ouvertes {r})',
+    'Stock updated': 'Stock mis à jour',
+    // orders view
+    'Orders': 'Commandes',
+    'From': 'Du',
+    'To': 'Au',
+    'All statuses': 'Tous les statuts',
+    'New': 'Nouvelle',
+    'Confirmed': 'Confirmée',
+    'Despatched': 'Expédiée',
+    'Cancelled': 'Annulée',
+    'Show orders': 'Afficher les commandes',
+    'Confirm': 'Confirmer',
+    'Mark despatched': 'Marquer expédiée',
+    'Clear': 'Effacer',
+    'All orders & visits': 'Toutes les commandes & visites',
+    'My orders & visits': 'Mes commandes & visites',
+    'Loading…': 'Chargement…',
+    'All officers': 'Tous les commerciaux',
+    '{v} visits · {o} with orders · {b} · {kg} kg · payment {p} (cancelled excluded from boxes)': '{v} visites · {o} avec commande · {b} · {kg} kg · paiements {p} (annulées exclues des cartons)',
+    'Select': 'Sélectionner',
+    'no GPS': 'sans GPS',
+    '{n} SKU lines': '{n} ligne(s) SKU',
+    ' · notes': ' · notes',
+    'Status {s} by {who} · {t}': 'Statut {s} par {who} · {t}',
+    '📲 Send on WhatsApp': '📲 Envoyer sur WhatsApp',
+    'Send order {id}': 'Envoyer la commande {id}',
+    'No visits in this period.': 'Aucune visite sur cette période.',
+    'Visit only — no SKUs.': 'Visite seule — aucun SKU.',
+    'Order': 'Cde',
+    'Shop': 'Boutique',
+    'Prev supply': 'Livraison préc.',
+    'prev {n} · ': 'préc. {n} · ',
+    '{n} selected': '{n} sélectionnée(s)',
+    'Mark {n} order(s) as {s}?': 'Marquer {n} commande(s) comme {s} ?',
+    '\nDespatched orders leave the reservation and reduce plant stock in the app until the next upload.': "\nLes commandes expédiées quittent la réservation et réduisent le stock usine dans l'appli jusqu'au prochain chargement.",
+    '\nCancelled orders give their boxes back to available stock.': '\nLes commandes annulées rendent leurs cartons au stock disponible.',
+    '{n} updated': '{n} mise(s) à jour',
+    ' · skipped: ': ' · ignorées : ',
+    '(already despatched)': '(déjà expédiée)',
+    'Load orders first': "Chargez d'abord les commandes",
+    // team view
+    'Team tracker': "Suivi de l'équipe",
+    'Day': 'Jour',
+    'Sales officers': 'Commerciaux',
+    'Last line: last 7 days': 'Dernière ligne : 7 derniers jours',
+    'Visits on this day': 'Visites du jour',
+    'Officers active': 'Commerciaux actifs',
+    'of {n} officers': 'sur {n} commerciaux',
+    'Visits': 'Visites',
+    '{n} with orders': '{n} avec commande',
+    'Boxes ordered': 'Cartons commandés',
+    'Payment collected': 'Paiements encaissés',
+    ' · login off': ' · accès coupé',
+    'No visit recorded on this day': 'Aucune visite enregistrée ce jour',
+    'Boxes': 'Cartons',
+    'First check-in {a} · last seen {b} · {loc}': 'Première arrivée {a} · vu en dernier {b} · {loc}',
+    '{n} visit(s) without GPS': '{n} visite(s) sans GPS',
+    '7 days: {v} visits · {b}': '7 jours : {v} visites · {b}',
+    'No sales officers yet. Admin adds them in ⚙️ Admin › Team logins.': "Pas encore de commerciaux. L'admin les ajoute dans ⚙️ Admin › Accès de l'équipe.",
+    'Time': 'Heure',
+    'Officer': 'Commercial',
+    'Partner': 'Client',
+    'Box': 'Cartons',
+    'Place': 'Lieu',
+    ' · cancelled': ' · annulée',
+    'No visits recorded on this day.': 'Aucune visite enregistrée ce jour.',
+    // admin view
+    'Upload plant stock': 'Charger le stock usine',
+    'Stock as of': 'Stock au',
+    'Excel or CSV file': 'Fichier Excel ou CSV',
+    'SKUs missing from the file → set plant stock to 0': 'SKU absents du fichier → stock usine à 0',
+    'Team logins': "Accès de l'équipe",
+    'Login = WhatsApp number + password': 'Identifiant = numéro WhatsApp + mot de passe',
+    'WhatsApp number *': 'Numéro WhatsApp *',
+    'Name *': 'Nom *',
+    'Role': 'Rôle',
+    'Zone / territory': 'Zone / secteur',
+    'e.g. Abidjan North': 'ex. Abidjan Nord',
+    'Blank = general password': 'Vide = mot de passe commun',
+    'Blank = keep current password': 'Vide = garder le mot de passe actuel',
+    'Ask them to set their own password at first login': 'Lui faire choisir son mot de passe à la 1re connexion',
+    'Login active': 'Accès actif',
+    'Save login': "Enregistrer l'accès",
+    'People': 'Personnes',
+    'Settings': 'Paramètres',
+    'App name': "Nom de l'application",
+    'General password for new logins': 'Mot de passe commun pour les nouveaux accès',
+    'e.g. Uday2026': 'ex. Uday2026',
+    'Order desk WhatsApp number': 'Numéro WhatsApp du service commandes',
+    'Where officers send orders': 'Où les commerciaux envoient les commandes',
+    'Order desk name': 'Nom du service commandes',
+    'Order Desk': 'Service commandes',
+    'Low-stock warning below (boxes)': 'Alerte stock faible sous (cartons)',
+    'Country code for 10-digit numbers': 'Indicatif pays pour les numéros à 10 chiffres',
+    'Save settings': 'Enregistrer les paramètres',
+    'Settings saved': 'Paramètres enregistrés',
+    'App link & data': "Lien de l'appli & données",
+    'App link': "Lien de l'appli",
+    'Open the data sheet': 'Ouvrir la feuille de données',
+    'Live (Google Sheet)': 'En ligne (Google Sheet)',
+    'Live (API link)': 'En ligne (lien API)',
+    'Demo on this device': 'Démo sur cet appareil',
+    '📋 Copy link': '📋 Copier le lien',
+    '📲 Share link on WhatsApp': '📲 Partager le lien sur WhatsApp',
+    'Share the <b>link</b>, never the HTML file: a file opened inside WhatsApp cannot run the app or read GPS.': 'Partagez le <b>lien</b>, jamais le fichier HTML : un fichier ouvert dans WhatsApp ne peut pas faire tourner l’appli ni lire le GPS.',
+    '<b>No team link yet.</b> This is the demo copy on this computer, so its address (file:/// or localhost) only opens here. The link your team uses is created in Google: follow steps 1–5 of SETUP GUIDE.md, then open the app from the <b>/exec</b> link Google gives you. This box will then show that link with a WhatsApp share button.':
+      '<b>Pas encore de lien pour l’équipe.</b> Ceci est la copie de démo sur cet ordinateur : son adresse (file:/// ou localhost) ne s’ouvre qu’ici. Le lien de l’équipe se crée dans Google : suivez les étapes 1 à 5 de SETUP GUIDE.md, puis ouvrez l’appli depuis le lien <b>/exec</b> donné par Google. Ce cadre affichera alors ce lien avec un bouton de partage WhatsApp.',
+    'Login saved. Send it to {n} after the Google setup, from the live app: this demo has no link the team can open.': 'Accès enregistré. Envoyez-le à {n} après la configuration Google, depuis l’appli en ligne : cette démo n’a pas de lien que l’équipe peut ouvrir.',
+    ' · must set password': ' · doit choisir son mot de passe',
+    ' · last login {t}': ' · dernière connexion {t}',
+    'never': 'jamais',
+    'Login created for {n}': 'Accès créé pour {n}',
+    'Saved {n}': '{n} enregistré',
+    'Send the login to {n}:': "Envoyer l'accès à {n} :",
+    'Could not find a Material (SAP code) column and a Closing Stock column in the first rows of the file.': 'Colonnes Material (code SAP) et Closing Stock introuvables dans les premières lignes du fichier.',
+    'Reading {f}…': 'Lecture de {f}…',
+    'Could not read the file: {e}': 'Impossible de lire le fichier : {e}',
+    'Check before upload': 'Vérifier avant de charger',
+    'File': 'Fichier',
+    'Columns used': 'Colonnes utilisées',
+    'SKU rows': 'Lignes SKU',
+    '{n} ({p} with stock)': '{n} ({p} avec stock)',
+    'Total boxes': 'Total cartons',
+    'New SKUs': 'Nouveaux SKU',
+    'In app, not in file': 'Dans l’appli, pas dans le fichier',
+    'Biggest': 'Plus gros',
+    '⬆ Upload {n} SKUs as stock of {d}': '⬆ Charger {n} SKU comme stock du {d}',
+    'Uploading…': 'Chargement…',
+    '✅ Uploaded {n} SKUs · {b} · {m} matched · {nw} new{z}. Officers see it now.': '✅ {n} SKU chargés · {b} · {m} reconnus · {nw} nouveaux{z}. Les commerciaux le voient maintenant.',
+    ' · {z} set to 0': ' · {z} mis à 0',
+    // server messages (Logic.gs)
+    'Your login has expired. Please log in again.': 'Votre session a expiré. Reconnectez-vous.',
+    'Please set your own password first.': "Choisissez d'abord votre propre mot de passe.",
+    'This is not allowed for your role.': "Ce n'est pas autorisé pour votre rôle.",
+    'Setup is already done. Please log in.': 'La configuration est déjà faite. Connectez-vous.',
+    'Enter a valid phone number.': 'Saisissez un numéro de téléphone valide.',
+    'Enter your name.': 'Saisissez votre nom.',
+    'Password must be at least 4 characters.': 'Le mot de passe doit avoir au moins 4 caractères.',
+    'Phone number or password is wrong.': 'Numéro ou mot de passe incorrect.',
+    'Your login is switched off. Please contact your admin.': 'Votre accès est désactivé. Contactez votre admin.',
+    'Current password is wrong.': 'Mot de passe actuel incorrect.',
+    'Enter the partner / shop name.': 'Saisissez le nom du client / de la boutique.',
+    'SKU not in plant stock list': 'SKU absent de la liste du stock usine',
+    'Marked not available by admin': "Marqué non disponible par l'admin",
+    'More than plant stock available': 'Plus que le stock usine disponible',
+    'Some SKUs cannot be ordered in this quantity. Please reduce them and submit again.': 'Certains SKU ne peuvent pas être commandés dans cette quantité. Réduisez-les et validez à nouveau.',
+    'Unknown status.': 'Statut inconnu.',
+    'Enter a valid WhatsApp / phone number.': 'Saisissez un numéro WhatsApp / téléphone valide.',
+    'Role must be admin, manager or officer.': 'Le rôle doit être admin, superviseur ou commercial.',
+    'You cannot remove the last active admin.': 'Impossible de retirer le dernier admin actif.',
+    "Enter the person's name.": 'Saisissez le nom de la personne.',
+    'Set a password, or set a general password in Settings first.': "Définissez un mot de passe, ou d'abord un mot de passe commun dans Paramètres.",
+    'No SKU rows found in the file. Check it has Material and Closing Stock columns.': 'Aucune ligne SKU trouvée. Vérifiez les colonnes Material et Closing Stock.',
+    'SKU not found.': 'SKU introuvable.'
+  };
+  // Blocks with bold text or code inside are translated as a whole.
+  var HT = {
+    connectIntro: {
+      en: 'This copy of the app is not connected to your team\'s data. Open the <b>app link</b> your admin shared on WhatsApp instead, or paste the web app link (ending in <code class="c">/exec</code>) below.',
+      fr: 'Cette copie de l\'appli n\'est pas reliée aux données de votre équipe. Ouvrez plutôt le <b>lien de l\'appli</b> envoyé par votre admin sur WhatsApp, ou collez ci-dessous le lien de l\'application web (finissant par <code class="c">/exec</code>).'
+    },
+    setupIntro: {
+      en: 'No logins exist yet. The person who fills this becomes the <b>admin</b>: they add the team, upload plant stock and see everything.',
+      fr: 'Aucun accès n\'existe encore. La personne qui remplit ceci devient l\'<b>admin</b> : elle ajoute l\'équipe, charge le stock usine et voit tout.'
+    },
+    uploadIntro: {
+      en: 'Upload the plant FG stock Excel every day (same layout as <b>FG SEP 26.xlsx</b>: Material, Material Description, Closing Stock). Officers see it at once and cannot order more than <b>plant stock − open orders</b>.',
+      fr: 'Chargez chaque jour l\'Excel du stock PF de l\'usine (même format que <b>FG SEP 26.xlsx</b> : Material, Material Description, Closing Stock). Les commerciaux le voient tout de suite et ne peuvent pas commander plus que <b>stock usine − commandes ouvertes</b>.'
+    }
+  };
+  var MONTHS = { en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], fr: ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'] };
+  var MISSING = {};
+
+  function t(s, p, lang) {
+    var L = lang || LANG, out = s;
+    if (L === 'fr') { if (Object.prototype.hasOwnProperty.call(FR, s)) out = FR[s]; else MISSING[s] = true; }
+    if (p) out = out.replace(/\{(\w+)\}/g, function (m, k) { return Object.prototype.hasOwnProperty.call(p, k) ? p[k] : m; });
+    return out;
+  }
+  function fmt(n, lang) { return Math.round(Number(n) || 0).toLocaleString((lang || LANG) === 'fr' ? 'fr-FR' : 'en-US'); }
+  function fmt1(n, lang) { return (Math.round((Number(n) || 0) * 10) / 10).toLocaleString((lang || LANG) === 'fr' ? 'fr-FR' : 'en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 }); }
+  // Box count with its unit: "12 box" / "12 cartons", "1 carton".
+  function bx(n, lang) { var L = lang || LANG, v = Math.round(Number(n) || 0); return fmt(v, L) + ' ' + (L === 'fr' ? (Math.abs(v) > 1 ? 'cartons' : 'carton') : 'box'); }
+  function roleLabel(r) { return t(ROLE_LABEL[r] || r); }
+
+  // Translates the static page text; elements marked data-dyn are written by the script with t().
+  function applyLang() {
+    document.documentElement.lang = LANG;
+    $$('[data-th]').forEach(function (el) { var h = HT[el.getAttribute('data-th')]; el.innerHTML = h[LANG] || h.en; });
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+      return n.parentNode && n.parentNode.closest('script,style,[data-th],[data-dyn]') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+    } });
+    var node;
+    while ((node = walker.nextNode())) {
+      if (node._en === undefined) node._en = node.nodeValue;
+      var key = node._en.trim().replace(/\s+/g, ' ');
+      if (!key || !/[A-Za-z]/.test(key)) continue;
+      node.nodeValue = LANG === 'fr' ? node._en.replace(node._en.trim(), t(key)) : node._en;
+    }
+    $$('[placeholder],[title],[aria-label]').forEach(function (el) {
+      ['placeholder', 'title', 'aria-label'].forEach(function (a) {
+        if (!el.hasAttribute(a) || el.closest('[data-dyn]')) return;
+        var k = '_en_' + a;
+        if (el[k] === undefined) el[k] = el.getAttribute(a);
+        el.setAttribute(a, /[A-Za-z]/.test(el[k]) && LANG === 'fr' ? t(el[k]) : el[k]);
+      });
+    });
+    $$('[data-lang]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-lang') === LANG); });
+  }
+  // Placeholders the script changes keep their English source so a later switch can translate them.
+  function setPh(el, english) { el._en_placeholder = english; el.setAttribute('placeholder', t(english)); }
+  function setLang(l) {
+    if (l === LANG) return;
+    LANG = l; store.set('uday_lang', l);
+    applyLang(); rerender();
+  }
+
+  /* ---------- more helpers ---------- */
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function stamp(ms) {
+    var d = new Date(ms + (Number(S.settings.tzOffsetMin) || 0) * 60000);
+    return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()) + ' ' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds());
+  }
+  function today() { return stamp(Date.now()).slice(0, 10); }
+  function addDays(day, n) { var p = day.split('-'); var d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]) + n * 86400000); return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()); }
+  function niceDay(day, lang) { if (!day) return ''; var p = day.slice(0, 10).split('-'); return int(p[2]) + ' ' + MONTHS[lang || LANG][int(p[1]) - 1] + ' ' + p[0]; }
+  function hhmm(ts) { return ts ? String(ts).slice(11, 16) : ''; }
+  function niceTs(ts) { if (!ts) return ''; return (String(ts).slice(0, 10) === today() ? (LANG === 'fr' ? "Aujourd'hui" : 'Today') : niceDay(ts)) + ' ' + hhmm(ts); }
+  function mapUrl(lat, lng) { return 'https://maps.google.com/?q=' + lat + ',' + lng; }
+  function digits(s) { return String(s || '').replace(/[^0-9]/g, ''); }
+  function phoneFull(s) { var d = digits(s); if (d.indexOf('00') === 0) d = d.slice(2); var cc = String(S.settings.countryCode || '225'); if (d.length === 10 && d.indexOf(cc) !== 0) d = cc + d; return d; }
+  // WhatsApp on a computer turns 4-byte emoji arriving through a link into "�", so messages keep to
+  // symbols that survive (✅ ⚠ ☎ ▪ …) and anything else typed by users (e.g. 😀 in notes) is dropped.
+  function waSafe(text) { return String(text).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]️?/g, '').replace(/ {2,}/g, ' '); }
+  function waLink(phone, text) { var d = phone ? phoneFull(phone) : ''; return 'https://wa.me/' + d + '?text=' + encodeURIComponent(waSafe(text)); }
+  var toastTimer;
+  function toast(text, kind) {
+    var el = $('#toast');
+    el.textContent = text; el.className = 'show' + (kind === 'err' ? ' err' : '');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.className = ''; }, kind === 'err' ? 4200 : 2400);
+  }
+  function msg(sel, text, kind) { var el = $(sel); el.textContent = text || ''; el.className = 'msgline' + (kind ? ' ' + kind : ''); }
+  function copyText(text) {
+    function fallback() {
+      var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+      var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta); toast(ok ? t('Copied') : t('Copy blocked here: press and hold the text to copy'), ok ? '' : 'err');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { toast(t('Copied')); }, fallback);
+    else fallback();
+  }
+  function loadScript(src) {
+    return new Promise(function (res, rej) {
+      if (document.querySelector('script[src="' + src + '"]')) { res(); return; }
+      var s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = function () { rej(new Error('Could not load ' + src)); }; document.head.appendChild(s);
+    });
+  }
+  function loadCss(href) { if (document.querySelector('link[href="' + href + '"]')) return; var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l); }
+  function download(name, text) {
+    try {
+      var blob = new Blob(['﻿' + text], { type: 'text/csv;charset=utf-8' });
+      var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+    } catch (e) { copyText(text); }
+  }
+  function csvCell(v) { var s = String(v === null || v === undefined ? '' : v); return /[",\n;]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+
+  /* ---------- state + server calls ---------- */
+  var S = { token: store.get('uday_token', ''), user: null, settings: {}, recipients: [], info: null, stock: [], byCode: {}, stockMeta: null, stockAt: 0,
+    partners: [], draft: null, view: '', orders: null, selected: {}, team: null, users: [], upload: null, gpsMsg: null };
+
+  function apiUrl() { return API_URL || store.get('uday_api_url', ''); }
+  function mode() {
+    if (window.google && google.script && google.script.run) return 'google';
+    if (apiUrl()) return 'http';
+    if (window.Logic && window.DemoDB) return 'demo';
+    return 'none';
+  }
+  function call(action, payload) {
+    var m = mode(), p, body = payload || {};
+    if (m === 'google') {
+      p = new Promise(function (res, rej) { google.script.run.withSuccessHandler(function (r) { res(JSON.parse(r)); }).withFailureHandler(rej).api(action, body, S.token); });
+    } else if (m === 'http') {
+      p = fetch(apiUrl(), { method: 'POST', body: JSON.stringify({ action: action, payload: body, token: S.token }) }).then(function (r) { return r.json(); });
+    } else if (m === 'demo') {
+      p = new Promise(function (res) { setTimeout(function () { res(Logic.handle(DemoDB, action, JSON.parse(JSON.stringify(body)), S.token)); }, 120); });
+    } else {
+      p = Promise.reject(new Error('not connected'));
+    }
+    return p.then(function (r) {
+      r = r || { ok: false, error: 'Empty reply from server' };
+      if (r.error) r.error = t(r.error);
+      if (r.code === 'AUTH' && action !== 'me') { logout(); toast(r.error, 'err'); }
+      return r;
+    }, function () {
+      return { ok: false, network: true, error: t('No connection to the server. Check mobile data and try again — your entries are kept on this phone.') };
+    });
+  }
+
+  /* ---------- screens ---------- */
+  function show(id) {
+    ['boot', 'scr-connect', 'scr-setup', 'scr-login', 'scr-pw', 'shell'].forEach(function (s) { $('#' + s).hidden = s !== id; });
+    window.scrollTo(0, 0);
+  }
+
+  function boot() {
+    var m = mode();
+    if (m === 'none') { show('scr-connect'); return; }
+    if (m === 'demo' && window.seedDemo) window.seedDemo();
+    var chain = S.token ? call('me') : Promise.resolve({ ok: false });
+    chain.then(function (r) {
+      if (r.ok) return enter(r);
+      if (r.network) { showLogin(); msg('#loginMsg', r.error, 'err'); return; }
+      return call('bootstrap').then(function (b) {
+        if (!b.ok) { showLogin(); msg('#loginMsg', b.error, 'err'); return; }
+        if (b.settings && b.settings.companyName) S.companyName = b.settings.companyName;
+        if (b.needsSetup) show('scr-setup'); else showLogin();
+      });
+    });
+  }
+  function showLogin() {
+    show('scr-login');
+    $('#loginCompany').textContent = t('{name} Sales', { name: S.companyName || 'Parle UDAY' });
+    $('#lPhone').value = store.get('uday_phone', '');
+  }
+
+  function enter(r) {
+    S.user = r.user; S.settings = r.settings || {}; S.recipients = r.recipients || []; S.info = r.info || null;
+    S.companyName = S.settings.companyName || 'Parle UDAY';
+    if (S.user.mustChange) { openPw(true); return; }
+    headerText();
+    $('#demoBanner').hidden = mode() !== 'demo';
+    buildTabs();
+    show('shell');
+    loadDraft();
+    loadStock(true).then(function () { renderOrderForm(); });
+    loadPartners();
+    var first = S.user.role === 'officer' ? 'order' : 'team';
+    go(store.get('uday_view_' + S.user.phone, first));
+  }
+  function headerText() {
+    $('#hdrCompany').textContent = t('{name} Sales', { name: S.companyName || 'Parle UDAY' });
+    $('#hdrWho').textContent = S.user.name + ' · ' + roleLabel(S.user.role) + (S.user.zone ? ' · ' + S.user.zone : '');
+  }
+
+  function logout() {
+    S.token = ''; store.del('uday_token'); S.user = null;
+    closeSheet(); showLogin(); $('#lPw').value = '';
+    document.body.classList.remove('has-bar');
+  }
+
+  var TABS = {
+    officer: [['order', '📝 New order'], ['stock', '📦 Stock'], ['orders', '🧾 My orders']],
+    manager: [['team', '👥 Team'], ['orders', '🧾 Orders'], ['stock', '📦 Stock'], ['order', '📝 New order']],
+    admin: [['team', '👥 Team'], ['orders', '🧾 Orders'], ['stock', '📦 Stock'], ['order', '📝 New order'], ['admin', '⚙️ Admin']]
+  };
+  function buildTabs() {
+    var tabs = TABS[S.user.role] || TABS.officer;
+    $('#tabs').innerHTML = tabs.map(function (x) { return '<button class="tab' + (x[0] === S.view ? ' on' : '') + '" type="button" data-view="' + x[0] + '">' + esc(t(x[1])) + '</button>'; }).join('');
+  }
+  function go(view) {
+    var allowed = (TABS[S.user.role] || TABS.officer).map(function (x) { return x[0]; });
+    if (allowed.indexOf(view) < 0) view = allowed[0];
+    S.view = view; store.set('uday_view_' + S.user.phone, view);
+    $$('.view').forEach(function (v) { v.hidden = v.id !== 'v-' + view; });
+    $$('.tab').forEach(function (x) { x.classList.toggle('on', x.getAttribute('data-view') === view); });
+    $('#orderBar').hidden = view !== 'order';
+    document.body.classList.toggle('has-bar', view === 'order');
+    window.scrollTo(0, 0);
+    if (view === 'order') { if (Date.now() - S.stockAt > 120000) loadStock().then(renderOrderForm); else renderOrderForm(); maybeAutoGps(); }
+    if (view === 'stock') loadStock(true).then(renderStock);
+    if (view === 'orders') initOrders();
+    if (view === 'team') initTeam();
+    if (view === 'admin') initAdmin();
+  }
+  // Redraws everything the script wrote, in the current language, without asking the server again.
+  function rerender() {
+    $('#btnShowPw').textContent = t($('#lPw').type === 'password' ? 'Show' : 'Hide');
+    if (!$('#scr-login').hidden) $('#loginCompany').textContent = t('{name} Sales', { name: S.companyName || 'Parle UDAY' });
+    if (!$('#scr-pw').hidden && S.user) $('#pwWho').textContent = S.user.name + ' · ' + S.user.phone;
+    if (!S.user || $('#shell').hidden) return;
+    headerText(); buildTabs(); buildLists();
+    renderOrderForm();
+    $('#btnBrowse').textContent = t($('#browseBox').hidden ? 'Show list' : 'Hide list');
+    $('#btnCatToggle').textContent = t($('#catList').hidden ? 'Show' : 'Hide');
+    if (S.view === 'stock') renderStock();
+    if (S.view === 'orders') { ordersTitle(); if (S.orders) { renderOfficerSelect(); renderOrders(); } }
+    if (S.view === 'team' && S.team) renderTeam();
+    if (S.view === 'admin') { renderLinkBox(); renderUsers(); setPh($('#aPw'), $('#aPhone').disabled ? 'Blank = keep current password' : 'Blank = general password'); if (S.upload) showUpload(S.upload.fileName, S.upload.sheetName, S.upload.res); }
+    if (!$('#sheet').hidden && S.sheetRender) S.sheetRender();
+  }
+
+  /* ---------- login / setup / password ---------- */
+  function doLogin() {
+    var phone = $('#lPhone').value.trim(), pw = $('#lPw').value;
+    if (!phone || !pw) { msg('#loginMsg', t('Enter your WhatsApp number and password.'), 'err'); return; }
+    $('#btnLogin').disabled = true; msg('#loginMsg', t('Checking…'));
+    call('login', { phone: phone, password: pw }).then(function (r) {
+      $('#btnLogin').disabled = false;
+      if (!r.ok) { msg('#loginMsg', r.error, 'err'); return; }
+      S.token = r.token; store.set('uday_token', r.token); store.set('uday_phone', phone); msg('#loginMsg', '');
+      return call('me').then(function (m) { if (m.ok) enter(m); else msg('#loginMsg', m.error, 'err'); });
+    });
+  }
+  function doSetup() {
+    var p = { name: $('#sName').value.trim(), phone: $('#sPhone').value.trim(), password: $('#sPw').value };
+    if (p.password !== $('#sPw2').value) { msg('#setupMsg', t('The two passwords are different.'), 'err'); return; }
+    $('#btnSetup').disabled = true;
+    call('setupAdmin', p).then(function (r) {
+      $('#btnSetup').disabled = false;
+      if (!r.ok) { msg('#setupMsg', r.error, 'err'); return; }
+      S.token = r.token; store.set('uday_token', r.token); store.set('uday_phone', p.phone);
+      return call('me').then(function (m) { if (m.ok) { enter(m); go('admin'); toast(t('Admin created. Next: upload plant stock and add your team.')); } });
+    });
+  }
+  function openPw(forced) {
+    $('#pwWho').textContent = S.user.name + ' · ' + S.user.phone;
+    $('#pwIntro').hidden = !forced; $('#pwOldWrap').hidden = forced; $('#btnPwCancel').hidden = forced;
+    $('#pOld').value = $('#pNew').value = $('#pNew2').value = ''; msg('#pwMsg', '');
+    show('scr-pw');
+  }
+  function savePw() {
+    var n = $('#pNew').value;
+    if (n !== $('#pNew2').value) { msg('#pwMsg', t('The two passwords are different.'), 'err'); return; }
+    $('#btnPwSave').disabled = true;
+    call('changePassword', { oldPassword: $('#pOld').value, newPassword: n }).then(function (r) {
+      $('#btnPwSave').disabled = false;
+      if (!r.ok) { msg('#pwMsg', r.error, 'err'); return; }
+      S.token = r.token; store.set('uday_token', r.token);
+      return call('me').then(function (m) { if (m.ok) { enter(m); toast(t('Password saved')); } });
+    });
+  }
+  /* ---------- stock + partners ---------- */
+  function loadStock(force) {
+    if (!force && Date.now() - S.stockAt < 30000) return Promise.resolve();
+    return call('getStock').then(function (r) {
+      if (!r.ok) { if (!r.network) toast(r.error, 'err'); return; }
+      S.stock = r.items; S.byCode = {}; S.stock.forEach(function (it) { S.byCode[it.code] = it; });
+      S.stockMeta = { lastUpload: r.lastUpload, low: r.lowStockBoxes, brandBlocks: r.brandBlocks || {} }; S.stockAt = Date.now();
+    });
+  }
+  function loadPartners() { return call('listPartners').then(function (r) { if (r.ok) S.partners = r.partners; }); }
+  function inStock(it) { return it && it.status !== 'blocked' && it.available > 0; }
+  function statusLabel(it) {
+    if (!it) return t('not in plant list');
+    if (it.status === 'blocked') return t('⛔ not available');
+    if (it.status === 'out') return t('⛔ out of stock');
+    if (it.status === 'low') return '⚠️ ' + t('{b} (low)', { b: bx(it.available) });
+    return '✅ ' + bx(it.available);
+  }
+  function stLabel(st) { return t({ ok: 'In stock', low: 'Low', out: 'Out', blocked: 'Not available' }[st]); }
+  function brands() {
+    var m = {};
+    S.stock.forEach(function (it) { var b = m[it.brand] || (m[it.brand] = { brand: it.brand, total: 0, avail: 0, boxes: 0, blocked: false }); b.total++; if (inStock(it)) { b.avail++; b.boxes += it.available; } if (it.brandBlocked) b.blocked = true; });
+    return Object.keys(m).sort().map(function (k) { return m[k]; });
+  }
+  function asOfText() {
+    var lu = S.stockMeta && S.stockMeta.lastUpload;
+    return lu ? t('Plant stock as of {d}', { d: niceDay(lu.stockAsOf) }) : t('No plant stock uploaded yet');
+  }
+
+  /* ---------- order draft ---------- */
+  function newOrderId() {
+    var chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789', r = '';
+    for (var i = 0; i < 5; i++) r += chars.charAt(Math.floor(Math.random() * chars.length));
+    return 'UD-' + today().slice(2).replace(/-/g, '') + '-' + r;
+  }
+  function blankDraft() {
+    return { orderId: newOrderId(), checkInMs: Date.now(), tier: 'Distributor', partnerName: '', partnerPhone: '', location: '', locationAuto: false,
+      lat: '', lng: '', accuracy: '', gpsMs: 0, orderRef: '', paymentAmount: '', paymentMode: PAY_MODES[0], paymentRef: '', notes: '', lines: [] };
+  }
+  function draftKey() { return 'uday_draft_' + S.user.phone; }
+  function loadDraft() { var d = store.get(draftKey(), null); S.draft = d && d.orderId && Array.isArray(d.lines) ? d : blankDraft(); S.gpsMsg = null; }
+  function saveDraft() { store.set(draftKey(), S.draft); }
+  function getLine(code) { return S.draft.lines.filter(function (l) { return l.code === code; })[0]; }
+  function lineEmpty(l) { return !l.shopStock && !l.orderBoxes && !l.prevOrderBoxes && (!l.supplyStatus || l.supplyStatus === 'Supplied'); }
+  function setLine(code, patch) {
+    var l = getLine(code);
+    if (!l) { var it = S.byCode[code] || {}; l = { code: code, name: it.name || code, kgPerBox: it.kgPerBox || 0, shopStock: '', orderBoxes: '', prevOrderBoxes: '', supplyStatus: 'Supplied', shortBoxes: '', shortReason: SHORT_REASONS[0], remark: '' }; S.draft.lines.push(l); }
+    Object.keys(patch).forEach(function (k) { l[k] = patch[k]; });
+    if (lineEmpty(l)) S.draft.lines = S.draft.lines.filter(function (x) { return x !== l; });
+    saveDraft();
+  }
+  function totals(lines) {
+    var r = { skus: 0, orderBoxes: 0, orderKg: 0, orderSkus: 0, shopBoxes: 0, shopKg: 0, shopSkus: 0, short: 0 };
+    lines.forEach(function (l) {
+      r.skus++;
+      var o = int(l.orderBoxes), s = int(l.shopStock), kg = numv(l.kgPerBox);
+      if (o > 0) { r.orderBoxes += o; r.orderKg += o * kg; r.orderSkus++; }
+      if (String(l.shopStock) !== '') { r.shopBoxes += s; r.shopKg += s * kg; r.shopSkus++; }
+      if (l.supplyStatus === 'Short Supplied' || l.supplyStatus === 'Not Supplied') r.short++;
+    });
+    return r;
+  }
+
+  // Selects and chips whose labels come from the lists above.
+  function buildLists() {
+    function fill(sel, items) { var el = $(sel), cur = el.value; el.innerHTML = items.map(function (x) { return '<option value="' + esc(x[0]) + '">' + esc(t(x[1])) + '</option>'; }).join(''); if (cur) el.value = cur; }
+    fill('#fPayMode', PAY_MODES.map(function (m) { return [m, m]; }));
+    fill('#qStatus', SUPPLY);
+    fill('#qReason', SHORT_REASONS.map(function (r) { return [r, r]; }));
+    $('#zoneChips').innerHTML = ZONES.map(function (z) { return '<button type="button" class="chip" data-zone="' + esc(z) + '">📍 ' + esc(z.replace('Abidjan - ', '')) + '</button>'; }).join('');
+    $('#noteChips').innerHTML = NOTE_TAGS.map(function (n, i) { return '<button type="button" class="chip" data-note="' + i + '">+ ' + esc(t(n).trim().replace(/\.$/, '')) + '</button>'; }).join('');
+  }
+
+  function renderOrderForm() {
+    var d = S.draft; if (!d) return;
+    $('#checkInLine').textContent = t('Check-in {t} · {id}', { t: hhmm(stamp(d.checkInMs)), id: d.orderId });
+    $$('#tierSeg button').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-tier') === d.tier); });
+    $('#fPartner').value = d.partnerName; $('#fPartnerPhone').value = d.partnerPhone; $('#fOrderRef').value = d.orderRef; $('#fLocation').value = d.location;
+    $('#fPay').value = d.paymentAmount; $('#fPayMode').value = d.paymentMode; $('#fPayRef').value = d.paymentRef; $('#fNotes').value = d.notes;
+    renderGps();
+    $('#stockAsOfMini').textContent = asOfText();
+    renderBrandSelect(); renderSkuSelect(); renderVisit(); renderBar();
+    if (!$('#browseBox').hidden) renderBrowse();
+  }
+  function renderBrandSelect() {
+    var sel = $('#qBrand'), cur = sel.value || 'ALL', bs = brands(), totalAvail = S.stock.filter(inStock).length;
+    sel.innerHTML = '<option value="ALL">' + esc(t('All categories ({a} of {n} SKUs in stock)', { a: totalAvail, n: S.stock.length })) + '</option>' +
+      bs.map(function (b) { return '<option value="' + esc(b.brand) + '">' + esc(b.brand) + ' (' + b.avail + '/' + b.total + ')' + (b.blocked ? ' ⛔' : '') + '</option>'; }).join('');
+    sel.value = bs.some(function (b) { return b.brand === cur; }) ? cur : 'ALL';
+  }
+  function matchItem(it, q) { return !q || (it.code + ' ' + it.name + ' ' + it.brand + ' ' + it.description).toLowerCase().indexOf(q) >= 0; }
+  function renderSkuSelect(keep) {
+    var sel = $('#qSku'), cur = keep || sel.value, brand = $('#qBrand').value, q = $('#qSearch').value.trim().toLowerCase(), only = $('#qAvailOnly').checked;
+    var list = S.stock.filter(function (it) { return (brand === 'ALL' || it.brand === brand) && matchItem(it, q) && (!only || inStock(it) || getLine(it.code)); });
+    if (!S.stock.length) { sel.innerHTML = '<option value="">' + esc(t('No SKUs yet — admin must upload plant stock')) + '</option>'; renderSkuInfo(); return; }
+    var head = list.length ? t('— Select SKU ({n} found) —', { n: list.length }) : (only ? t('No SKU in stock matches — untick the box above') : t('No SKU matches your search'));
+    sel.innerHTML = '<option value="">' + esc(head) + '</option>' + list.map(function (it) {
+      return '<option value="' + it.code + '">' + (getLine(it.code) ? '✓ ' : '') + esc(it.name) + ' · ' + esc(statusLabel(it)) + '</option>';
+    }).join('');
+    sel.value = list.some(function (it) { return it.code === cur; }) ? cur : '';
+    if (list.length === 1 && !sel.value) sel.value = list[0].code;
+    loadQuick(true);
+  }
+  function renderSkuInfo() {
+    var code = $('#qSku').value, it = S.byCode[code], box = $('#qInfo');
+    if (!code || !it) { box.hidden = true; return; }
+    box.hidden = false; box.className = 'sku-info ' + it.status;
+    var l = getLine(code), inVisit = l && int(l.orderBoxes) ? t(' · in this visit: {b}', { b: bx(int(l.orderBoxes)) }) : '';
+    var line2 = it.status === 'blocked' ? '<b>' + esc(t('⛔ Not available')) + '</b> — ' + esc(t(it.note || 'marked by admin')) :
+      it.status === 'out' ? '<b>' + esc(t('⛔ Out of stock at plant')) + '</b> — ' + esc(t('you can still record shop stock')) :
+      esc(t('Plant stock you can order:')) + ' <b class="big">' + fmt(it.available) + '</b> ' + esc(bx(it.available).replace(/^[\d\s.,  ]+/, '')) + ' (' + fmt1(it.available * it.kgPerBox) + ' kg)' + (it.status === 'low' ? ' <b>' + esc(t(' · low')) + '</b>' : '');
+    box.innerHTML = '<div><b>' + esc(it.name) + '</b> <span class="muted small">SAP ' + esc(it.code) + ' · ' + it.kgPerBox + ' ' + esc(t('kg/box')) + ' · ' + esc(it.brand) + '</span></div><div>' + line2 + esc(inVisit) + '</div>';
+  }
+  // keepTyping: a re-render keeps what the officer is typing for the selected SKU.
+  function loadQuick(keepTyping) {
+    var code = $('#qSku').value, l = code ? getLine(code) : null;
+    if (!keepTyping || code !== S.quickCode) {
+      $('#qShop').value = l ? l.shopStock : ''; $('#qOrder').value = l ? l.orderBoxes : ''; $('#qPrev').value = l ? l.prevOrderBoxes : '';
+      $('#qStatus').value = l ? l.supplyStatus : 'Supplied'; $('#qShort').value = l ? l.shortBoxes : ''; $('#qReason').value = l ? l.shortReason : SHORT_REASONS[0]; $('#qRemark').value = l ? l.remark : '';
+    }
+    S.quickCode = code;
+    var it = S.byCode[code];
+    $('#qOrder').disabled = !!it && !inStock(it);
+    setPh($('#qOrder'), it && !inStock(it) ? 'Not orderable' : 'Boxes to order');
+    renderSkuInfo(); quickHints(); toggleDrawer();
+  }
+  function quickHints() {
+    var it = S.byCode[$('#qSku').value], o = int($('#qOrder').value), s = int($('#qShop').value);
+    $('#qShopKg').textContent = it && $('#qShop').value !== '' ? fmt1(s * it.kgPerBox) + ' kg' : '';
+    var h = $('#qOrderHint'), bad = it && o > 0 && o > it.available;
+    $('#qOrder').classList.toggle('bad', !!bad);
+    h.className = 'hint' + (bad ? ' err' : '');
+    h.textContent = !it ? '' : bad ? t('Only {b} available', { b: bx(it.available) }) : (o > 0 ? fmt1(o * it.kgPerBox) + ' kg · ' : '') + (inStock(it) ? 'max ' + fmt(it.available) : '');
+  }
+  function toggleDrawer() { var v = $('#qStatus').value; $('#qDrawer').hidden = !(v === 'Short Supplied' || v === 'Not Supplied'); }
+  function addLine() {
+    var code = $('#qSku').value, it = S.byCode[code];
+    if (!code) { toast(t('Select a SKU first'), 'err'); $('#qSku').focus(); return; }
+    var o = $('#qOrder').value.trim(), patch = { shopStock: $('#qShop').value.trim(), orderBoxes: o === '' ? '' : String(Math.max(0, int(o))), prevOrderBoxes: $('#qPrev').value.trim(),
+      supplyStatus: $('#qStatus').value, shortBoxes: $('#qShort').value.trim(), shortReason: $('#qReason').value, remark: $('#qRemark').value.trim() };
+    if (int(patch.orderBoxes) > 0) {
+      if (!inStock(it)) { toast(t('{name} cannot be ordered: {why}', { name: it.name, why: statusLabel(it).replace(/^\W+/, '') }), 'err'); return; }
+      if (int(patch.orderBoxes) > it.available) { toast(t('Only {b} of {name} available', { b: bx(it.available), name: it.name }), 'err'); return; }
+    }
+    var had = !!getLine(code);
+    if (lineEmpty(patch) && !had) { toast(t('Enter shop stock, order boxes or previous order details'), 'err'); return; }
+    setLine(code, patch);
+    toast(lineEmpty(patch) ? t('Removed from visit') : t(had ? 'Updated {name}' : 'Added {name}', { name: it.name }));
+    $('#qSearch').value = ''; S.quickCode = null; renderSkuSelect(''); renderVisit(); renderBar();
+    if (!$('#browseBox').hidden) renderBrowse();
+  }
+  function renderVisit() {
+    var lines = S.draft.lines, box = $('#visitLines');
+    $('#visitCount').textContent = lines.length;
+    if (!lines.length) { box.innerHTML = '<div class="empty">' + esc(t('No SKUs yet. Pick a SKU above, enter boxes and tap “Add”.')) + '</div>'; return; }
+    box.innerHTML = lines.map(function (l) {
+      var tags = [], kg = numv(l.kgPerBox);
+      if (int(l.orderBoxes) > 0) tags.push('<span class="tag o">' + esc(t('🛒 Order {b} · {kg} kg', { b: bx(int(l.orderBoxes)), kg: fmt1(int(l.orderBoxes) * kg) })) + '</span>');
+      if (String(l.shopStock) !== '') tags.push('<span class="tag s">' + esc(t('📦 Shop {b}', { b: bx(int(l.shopStock)) })) + '</span>');
+      if (String(l.prevOrderBoxes) !== '') tags.push('<span class="tag">' + esc(t('☑️ Prev {n}', { n: int(l.prevOrderBoxes) })) + '</span>');
+      if (l.supplyStatus === 'Short Supplied' || l.supplyStatus === 'Not Supplied') tags.push('<span class="tag w">' + esc(l.supplyStatus === 'Short Supplied' ? t('⚠️ Short {n}', { n: int(l.shortBoxes) }) : t('❌ Not supplied')) + ' · ' + esc(t(l.shortReason)) + '</span>');
+      var it = S.byCode[l.code];
+      if (it && int(l.orderBoxes) > it.available) tags.push('<span class="tag w">' + esc(t('Only {b} available now', { b: bx(it.available) })) + '</span>');
+      return '<div class="line"><div class="main"><div class="nm">' + esc(l.name) + ' <span class="muted small">' + esc(l.code) + '</span></div><div class="tags">' + tags.join('') + '</div></div>' +
+        '<button class="btn small ghost-dark" type="button" data-edit="' + esc(l.code) + '">' + esc(t('Edit')) + '</button><button class="btn small" type="button" data-del="' + esc(l.code) + '" aria-label="' + esc(t('Remove')) + '">✕</button></div>';
+    }).join('');
+  }
+  function renderBar() {
+    var r = totals(S.draft.lines);
+    $('#kSku').textContent = r.skus; $('#kOrder').textContent = fmt(r.orderBoxes); $('#kOrderKg').textContent = fmt1(r.orderKg) + ' kg';
+    $('#kShop').textContent = fmt(r.shopBoxes); $('#kPay').textContent = fmt(numv(S.draft.paymentAmount));
+  }
+
+  /* browse list */
+  var browse = { brand: 'ALL', shown: PAGE };
+  function renderBrowse() {
+    var bs = brands(), q = $('#bSearch').value.trim().toLowerCase(), only = $('#bAvailOnly').checked;
+    $('#bBrands').innerHTML = '<button type="button" class="chip' + (browse.brand === 'ALL' ? ' on' : '') + '" data-bbrand="ALL">' + esc(t('All')) + '</button>' +
+      bs.map(function (b) { return '<button type="button" class="chip' + (browse.brand === b.brand ? ' on' : '') + '" data-bbrand="' + esc(b.brand) + '">' + esc(b.brand) + '<span class="n">' + b.avail + '</span></button>'; }).join('');
+    var list = S.stock.filter(function (it) { return (browse.brand === 'ALL' || it.brand === browse.brand) && matchItem(it, q) && (!only || inStock(it) || getLine(it.code)); });
+    var shown = list.slice(0, browse.shown);
+    $('#bList').innerHTML = shown.length ? shown.map(function (it) {
+      var l = getLine(it.code) || {}, can = inStock(it);
+      return '<div class="bcard ' + it.status + (getLine(it.code) ? ' on' : '') + '"><div class="row1"><div><div class="nm">' + esc(it.name) + '</div><div class="meta">SAP ' + esc(it.code) + ' · ' + it.kgPerBox + ' ' + esc(t('kg/box')) + ' · ' + esc(it.brand) + '</div></div><span class="st ' + it.status + '">' + esc(statusLabel(it)) + '</span></div>' +
+        '<div class="ins"><div><label>' + esc(t('📦 Shop stock (box)')) + '</label><input type="number" inputmode="numeric" pattern="[0-9]*" min="0" data-b="shopStock" data-code="' + it.code + '" value="' + esc(l.shopStock || '') + '" placeholder="0"></div>' +
+        '<div><label>' + esc(t('🛒 Order (box)')) + (can ? ' · max ' + fmt(it.available) : '') + '</label><input type="number" inputmode="numeric" pattern="[0-9]*" min="0" data-b="orderBoxes" data-code="' + it.code + '" value="' + esc(l.orderBoxes || '') + '" placeholder="' + (can ? '0' : esc(t('n/a'))) + '"' + (can ? '' : ' disabled') + '></div></div></div>';
+    }).join('') : '<div class="empty">' + esc(t('No SKU matches.')) + '</div>';
+    $('#bMore').hidden = list.length <= browse.shown;
+    $('#bMore').textContent = t('Show more ({n} left)', { n: list.length - browse.shown });
+  }
+  var visitTimer;
+  function browseInput(el) {
+    var code = el.getAttribute('data-code'), f = el.getAttribute('data-b'), it = S.byCode[code], v = el.value.trim();
+    if (f === 'orderBoxes' && it && int(v) > it.available) { el.classList.add('bad'); toast(t('Only {b} of {name} available', { b: bx(it.available), name: it.name }), 'err'); return; }
+    el.classList.remove('bad');
+    var patch = {}; patch[f] = v === '' ? '' : String(Math.max(0, int(v)));
+    setLine(code, patch);
+    var card = el.closest('.bcard'); if (card) card.classList.toggle('on', !!getLine(code));
+    clearTimeout(visitTimer); visitTimer = setTimeout(function () { renderVisit(); renderBar(); }, 250);
+  }
+
+  /* GPS */
+  function renderGps() {
+    var d = S.draft, el = $('#gpsStatus');
+    if (d.lat) { el.className = 'gps-status ok'; el.innerHTML = esc(t('✅ Located ±{a} m at {t} ·', { a: d.accuracy, t: hhmm(stamp(d.gpsMs)) })) + ' <a href="' + mapUrl(d.lat, d.lng) + '" target="_blank" rel="noopener">' + esc(t('map')) + '</a>'; }
+    else if (S.gpsMsg) { el.className = 'gps-status ' + S.gpsMsg.kind; el.textContent = t(S.gpsMsg.text); }
+    else { el.className = 'gps-status'; el.textContent = t('Location not captured yet. Tap 📍 GPS at the shop.'); }
+  }
+  function gpsState(text, kind) { S.gpsMsg = { text: text, kind: kind }; renderGps(); }
+  function captureGps(quiet) {
+    if (!('geolocation' in navigator)) { gpsState('This screen cannot read GPS. Open the app link in Chrome or Safari (not inside a file preview).', 'err'); return; }
+    var policy = document.permissionsPolicy || document.featurePolicy;
+    if (policy && policy.allowsFeature && !policy.allowsFeature('geolocation')) { gpsState('The page hosting the app blocks GPS (phone settings are not the problem). Tell your admin: use option B in the setup guide.', 'err'); return; }
+    gpsState('📡 Finding your location… keep the phone in the open.', 'wait');
+    var done = false;
+    function ok(pos) {
+      done = true;
+      var d = S.draft, c = pos.coords;
+      d.lat = c.latitude.toFixed(6); d.lng = c.longitude.toFixed(6); d.accuracy = String(Math.round(c.accuracy)); d.gpsMs = Date.now();
+      if (!d.location || d.locationAuto) { d.location = 'GPS ' + c.latitude.toFixed(5) + ', ' + c.longitude.toFixed(5); d.locationAuto = true; $('#fLocation').value = d.location; }
+      S.gpsMsg = null; saveDraft(); renderGps();
+      reverseGeocode(c.latitude, c.longitude);
+    }
+    function bad(err) {
+      if (done) return;
+      if (err && err.code === 1) {
+        gpsState(quiet ? 'Tap 📍 GPS and allow location.' : 'Location is blocked. iPhone: Settings › Privacy › Location Services › Safari Websites (or WhatsApp) › While Using. Android: tap 🔒 next to the address › Permissions › Location › Allow. Then tap 📍 GPS again.', 'err');
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(ok, function () { gpsState('No GPS fix. Step outside or turn on Location, then tap 📍 GPS again.', 'err'); }, { enableHighAccuracy: false, timeout: 12000, maximumAge: 300000 });
+    }
+    try { navigator.geolocation.getCurrentPosition(ok, bad, { enableHighAccuracy: true, timeout: 15000, maximumAge: 30000 }); }
+    catch (e) { gpsState('GPS is not allowed on this screen. Open the app link in Chrome or Safari.', 'err'); }
+  }
+  function reverseGeocode(lat, lng) {
+    if (!window.fetch) return;
+    fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=fr,en&lat=' + lat + '&lon=' + lng)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!j || !j.address) return;
+        var a = j.address, place = [a.suburb || a.neighbourhood || a.quarter || a.village || '', a.city || a.town || a.county || a.state || ''].filter(Boolean).join(', ');
+        var d = S.draft;
+        if (place && d.locationAuto) { d.location = place; saveDraft(); $('#fLocation').value = place; }
+      }).catch(function () { /* place name is optional */ });
+  }
+  function maybeAutoGps() {
+    if (!S.draft || S.draft.lat || !navigator.permissions || !navigator.permissions.query) return;
+    navigator.permissions.query({ name: 'geolocation' }).then(function (p) { if (p.state === 'granted') captureGps(true); }).catch(function () { /* not supported */ });
+  }
+
+  /* partner suggestions */
+  function suggestPartners() {
+    var q = $('#fPartner').value.trim().toLowerCase(), box = $('#partnerSuggest');
+    var list = S.partners.filter(function (p) { return !q || (p.name + ' ' + p.location + ' ' + p.phone).toLowerCase().indexOf(q) >= 0; }).slice(0, 7);
+    if (!list.length || (list.length === 1 && list[0].name.toLowerCase() === q)) { box.hidden = true; return; }
+    box.hidden = false;
+    box.innerHTML = list.map(function (p, i) { return '<button type="button" data-partner="' + i + '">' + esc(p.name) + '<small>' + esc([t(p.tier), p.location, p.phone].filter(Boolean).join(' · ')) + (p.lastVisitAt ? esc(t(' · last visit {t}', { t: niceTs(p.lastVisitAt) })) : '') + '</small></button>'; }).join('');
+    box._list = list;
+  }
+  function pickPartner(p) {
+    var d = S.draft;
+    d.partnerName = p.name; if (p.phone) d.partnerPhone = p.phone; if (p.tier && TIERS.indexOf(p.tier) >= 0) d.tier = p.tier;
+    if (p.location && (!d.location || d.locationAuto) && !d.lat) { d.location = p.location; d.locationAuto = false; }
+    saveDraft(); $('#partnerSuggest').hidden = true; renderOrderForm();
+  }
+
+  /* submit + WhatsApp report */
+  function payload() {
+    var d = S.draft;
+    return { orderId: d.orderId, partnerName: d.partnerName.trim(), partnerTier: d.tier, partnerPhone: d.partnerPhone.trim(), location: d.location.trim(),
+      lat: d.lat, lng: d.lng, accuracy: d.accuracy, checkInMs: d.checkInMs, orderRef: d.orderRef.trim(), paymentAmount: d.paymentAmount,
+      paymentMode: d.paymentMode, paymentRef: d.paymentRef.trim(), notes: d.notes.trim(), lines: d.lines };
+  }
+  function buildMessage(o, lang) {
+    var L = lang || LANG;
+    function tt(s, p) { return t(s, p, L); }
+    var out = [], r = totals(o.lines), when = o.createdAt || stamp(Date.now()), line = '--------------------------------';
+    out.push('*PARLE UDAY • ' + tt('VISIT & ORDER') + ' ' + (o.orderId || '') + '*');
+    out.push('⏰ ' + niceDay(when, L) + ' ' + hhmm(when) + (o.checkInAt ? ' (' + tt('check-in') + ' ' + hhmm(o.checkInAt) + ')' : ''));
+    out.push('▪ *' + tt('Sales officer:') + '* ' + (o.officerName || '') + (o.zone ? ' (' + o.zone + ')' : ''));
+    out.push('▪ *' + tt('Partner:') + '* ' + (o.partnerName || '-') + ' (' + tt(o.partnerTier || '') + ')' + (o.partnerPhone ? ' • ☎ ' + o.partnerPhone : ''));
+    out.push('▪ *' + tt('Location:') + '* ' + (o.location || '-'));
+    out.push(o.lat ? '➤ ' + mapUrl(o.lat, o.lng) + ' (±' + o.accuracy + ' m)' : '⚠ ' + tt('GPS not captured'));
+    if (o.orderRef) out.push('▪ *' + tt('Ref:') + '* ' + o.orderRef);
+    out.push(line);
+    out.push('✅ *' + tt('NEW ORDER: {b} • {kg} kg • {n} SKUs', { b: bx(r.orderBoxes, L), kg: fmt1(r.orderKg, L), n: r.orderSkus }) + '*');
+    var n = 0;
+    o.lines.forEach(function (l) { if (int(l.orderBoxes) > 0) out.push((++n) + '. ' + l.name + ' (' + l.code + ') — *' + bx(int(l.orderBoxes), L) + '* (' + fmt1(int(l.orderBoxes) * numv(l.kgPerBox), L) + ' kg)'); });
+    if (!n) out.push('_' + tt('No new order on this visit.') + '_');
+    var shop = o.lines.filter(function (l) { return String(l.shopStock) !== ''; });
+    if (shop.length) {
+      out.push(line);
+      out.push('☑ *' + tt('SHOP STOCK COUNTED: {b} • {n} SKUs', { b: bx(r.shopBoxes, L), n: shop.length }) + '*');
+      shop.forEach(function (l, i) { out.push((i + 1) + '. ' + l.name + ' (' + l.code + ') — ' + bx(int(l.shopStock), L)); });
+    }
+    var prev = o.lines.filter(function (l) { return String(l.prevOrderBoxes) !== '' || l.supplyStatus === 'Short Supplied' || l.supplyStatus === 'Not Supplied'; });
+    if (prev.length) {
+      out.push(line);
+      out.push('⚠ *' + tt('PREVIOUS ORDER SUPPLY CHECK') + '*');
+      prev.forEach(function (l, i) {
+        var s = (i + 1) + '. ' + l.name + ' — ' + (String(l.prevOrderBoxes) !== '' ? tt('prev {b}', { b: bx(int(l.prevOrderBoxes), L) }) + ' | ' : '') +
+          (l.supplyStatus === 'Short Supplied' ? '⚠ ' + tt('SHORT {b}', { b: bx(int(l.shortBoxes), L) }) : l.supplyStatus === 'Not Supplied' ? '❌ ' + tt('NOT SUPPLIED') : '✔ ' + tt('supplied'));
+        if (l.supplyStatus !== 'Supplied' && l.shortReason) s += ' • ' + tt(l.shortReason);
+        if (l.remark) s += ' • ' + l.remark;
+        out.push(s);
+      });
+    }
+    out.push(line);
+    out.push('★ *' + tt('Payment:') + '* ' + fmt(numv(o.paymentAmount), L) + ' (' + tt(o.paymentMode || 'None / No Payment') + ')' + (o.paymentRef ? ' • ' + tt('Ref:') + ' ' + o.paymentRef : ''));
+    if (o.notes) out.push('✎ *' + tt('Market notes:') + '* ' + o.notes);
+    return waSafe(out.join('\n'));
+  }
+  function draftAsOrder(extra) {
+    var p = payload();
+    p.officerName = S.user.name; p.zone = S.user.zone; p.partnerTier = S.draft.tier; p.checkInAt = stamp(S.draft.checkInMs);
+    p.lines = S.draft.lines.map(function (l) { return Object.assign({}, l); });
+    return Object.assign(p, extra || {});
+  }
+  function recipientsHtml() {
+    var opts = [], last = store.get('uday_last_recipient', null);
+    if (S.settings.orderDeskPhone) opts.push([S.settings.orderDeskPhone, '🏢 ' + (S.settings.orderDeskLabel || t('Order Desk'))]);
+    S.recipients.forEach(function (r) { if (r.phone !== S.user.phone) opts.push([r.phone, '👤 ' + r.name + ' (' + roleLabel(r.role) + ')']); });
+    opts.push(['', t('📲 Choose chat or group inside WhatsApp')]);
+    return opts.map(function (o) { return '<option value="' + esc(o[0]) + '"' + (o[0] === last ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('');
+  }
+  // Report block inside the sheet: recipient, report language, WhatsApp link and copy.
+  function sendBlock() {
+    return '<label class="lbl" for="sendTo">' + esc(t('Send report to')) + '</label><select id="sendTo" style="margin-bottom:8px">' + recipientsHtml() + '</select>' +
+      '<div class="rl"><span class="lbl" style="margin:0">' + esc(t('Report language')) + '</span><div class="lang" id="reportLang"><button type="button" data-rl="fr">Français</button><button type="button" data-rl="en">English</button></div></div>' +
+      '<div class="btn-row"><a class="btn wa" id="waGo" target="_blank" rel="noopener" href="#">' + esc(t('📲 Open WhatsApp')) + '</a><button class="btn dark" type="button" id="msgCopy">' + esc(t('📋 Copy')) + '</button></div>' +
+      '<pre class="msg" id="msgText"></pre>';
+  }
+  function wireSend(order) {
+    var rl = store.get('uday_report_lang', null) || LANG, text = '';
+    function upd() {
+      text = buildMessage(order, rl);
+      $('#msgText').textContent = text;
+      $$('#reportLang button').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-rl') === rl); });
+      var to = $('#sendTo').value; store.set('uday_last_recipient', to); $('#waGo').href = waLink(to, text);
+    }
+    $('#sendTo').addEventListener('change', upd);
+    $('#reportLang').addEventListener('click', function (e) { var b = e.target.closest('[data-rl]'); if (!b) return; rl = b.getAttribute('data-rl'); store.set('uday_report_lang', rl); upd(); });
+    $('#msgCopy').addEventListener('click', function () { copyText(text); });
+    upd();
+  }
+  // render() draws the sheet in the current language; a language switch calls it again.
+  function openSheet(render) { S.sheetRender = render; render(); $('#sheet').hidden = false; $('#sheet .sheet').scrollTop = 0; }
+  function sheetHtml(title, html) { $('#sheetTitle').textContent = title; $('#sheetBody').innerHTML = html; }
+  function closeSheet() { $('#sheet').hidden = true; $('#sheetBody').innerHTML = ''; S.sheetRender = null; }
+
+  function preview() {
+    var order = draftAsOrder();
+    openSheet(function () {
+      sheetHtml(t('Preview — not saved yet'), '<div class="warn-box small">' + t('This is a preview. Tap <b>✅ Submit order</b> to save it, reserve plant stock and then send it on WhatsApp.') + '</div>' + sendBlock());
+      wireSend(order);
+    });
+  }
+  function submit() {
+    var d = S.draft;
+    if (!d.partnerName.trim()) { toast(t('Enter the partner / shop name'), 'err'); $('#fPartner').focus(); return; }
+    if (!d.location.trim()) { toast(t('Enter the market / area, or tap 📍 GPS'), 'err'); $('#fLocation').focus(); return; }
+    var over = d.lines.filter(function (l) { var it = S.byCode[l.code]; return int(l.orderBoxes) > 0 && (!it || !inStock(it) || int(l.orderBoxes) > it.available); });
+    if (over.length) { toast(t('Reduce: {list} — more than available', { list: over.map(function (l) { return l.name; }).join(', ') }), 'err'); return; }
+    if (!d.lat && !window.confirm(t('GPS location is not captured. Your manager will see “no GPS” on this visit. Submit anyway?'))) return;
+    if (!d.lines.length && !window.confirm(t('No SKUs entered. Save this as a visit without order?'))) return;
+    var btn = $('#btnSubmit'); btn.disabled = true; btn.textContent = t('Saving…');
+    call('submitOrder', payload()).then(function (r) {
+      btn.disabled = false; btn.textContent = t('✅ Submit order');
+      if (!r.ok) {
+        if (r.problems) {
+          openSheet(function () {
+            sheetHtml(t('Stock changed — please adjust'), '<div class="err-box">' + esc(r.error) + '</div><table class="t"><tr><th>' + esc(t('SKU')) + '</th><th class="n">' + esc(t('Asked')) + '</th><th class="n">' + esc(t('Available')) + '</th></tr>' +
+              r.problems.map(function (p) { return '<tr><td>' + esc(p.name) + '<div class="small muted">' + esc(t(p.reason)) + '</div></td><td class="n">' + p.requested + '</td><td class="n"><b>' + p.available + '</b></td></tr>'; }).join('') +
+              '</table><button class="btn red block" type="button" id="fixProblems" style="margin-top:10px">' + esc(t('Set these to the available quantity')) + '</button>');
+            $('#fixProblems').addEventListener('click', function () {
+              r.problems.forEach(function (p) { setLine(p.code, { orderBoxes: p.available > 0 ? String(p.available) : '' }); });
+              closeSheet(); loadStock(true).then(renderOrderForm); toast(t('Adjusted. Check and submit again.'));
+            });
+          });
+          loadStock(true).then(renderOrderForm);
+        } else openSheet(function () { sheetHtml(t('Not saved'), '<div class="err-box">' + esc(r.error) + '</div>'); });
+        return;
+      }
+      var order = draftAsOrder({ orderId: r.orderId, createdAt: r.createdAt });
+      openSheet(function () {
+        sheetHtml(t('Saved ✅'), '<div class="ok-box">' + t('<b>Order {id}</b> saved for {p}.<br>{b} · {kg} kg reserved from plant stock.', { id: esc(r.orderId), p: esc(order.partnerName), b: bx(r.totalBoxes), kg: fmt1(r.totalKg) }) +
+          (r.duplicate ? '<br><span class="small">' + esc(t('(Already saved earlier — not saved twice.)')) + '</span>' : '') + '</div>' +
+          sendBlock() + '<button class="btn red block" type="button" id="nextVisit" style="margin-top:6px">' + esc(t('➕ Start next visit')) + '</button>');
+        wireSend(order);
+        $('#nextVisit').addEventListener('click', function () { closeSheet(); window.scrollTo(0, 0); });
+      });
+      S.draft = blankDraft(); S.gpsMsg = null; saveDraft(); renderOrderForm();
+      loadStock(true).then(renderOrderForm); loadPartners();
+    });
+  }
+  function resetVisit() {
+    if (S.draft.lines.length || S.draft.partnerName) { if (!window.confirm(t('Clear this visit and start a new one?'))) return; }
+    S.draft = blankDraft(); S.gpsMsg = null; saveDraft(); renderOrderForm(); window.scrollTo(0, 0); toast(t('New visit started'));
+  }
+
+  /* ---------- STOCK VIEW ---------- */
+  var stockView = { shown: 60 };
+  function renderStock() {
+    var lu = S.stockMeta && S.stockMeta.lastUpload, admin = S.user.role === 'admin';
+    $('#stockMeta').innerHTML = lu ? '<b>' + esc(asOfText()) + '</b> · ' + esc(t('uploaded {ts} by {who}', { ts: niceTs(lu.uploadedAt), who: lu.uploadedBy })) + (lu.fileName ? ' · ' + esc(lu.fileName) : '') +
+      '<div class="muted" style="margin-top:3px">' + esc(t('“Available” = plant stock − open orders already taken by the team.')) + '</div>' :
+      '<b>' + esc(t('No plant stock uploaded yet.')) + '</b> ' + esc(t(admin ? 'Go to ⚙️ Admin › Upload plant stock.' : 'Your admin will upload it.'));
+    var avail = S.stock.filter(inStock), boxes = avail.reduce(function (s, it) { return s + it.available; }, 0), kg = avail.reduce(function (s, it) { return s + it.available * it.kgPerBox; }, 0);
+    var out = S.stock.filter(function (it) { return it.status === 'out'; }).length, blocked = S.stock.filter(function (it) { return it.status === 'blocked'; }).length;
+    var reserved = S.stock.reduce(function (s, it) { return s + it.reserved; }, 0);
+    $('#stockTiles').innerHTML = '<div class="tile"><span>' + esc(t('SKUs in stock')) + '</span><b>' + avail.length + '</b><small>' + esc(t('of {n}', { n: S.stock.length })) + '</small></div>' +
+      '<div class="tile"><span>' + esc(t('Boxes available')) + '</span><b>' + fmt(boxes) + '</b><small>' + fmt(kg / 1000) + ' t</small></div>' +
+      '<div class="tile"><span>' + esc(t('On open orders')) + '</span><b>' + fmt(reserved) + '</b><small>' + esc(t('box reserved')) + '</small></div>' +
+      '<div class="tile"><span>' + esc(t('Out / not available')) + '</span><b>' + (out + blocked) + '</b><small>' + esc(t('{a} out · {b} blocked', { a: out, b: blocked })) + '</small></div>';
+    var bs = brands();
+    $('#catList').innerHTML = bs.map(function (b) {
+      return '<div class="brow"><div><div class="nm">' + esc(b.brand) + (b.blocked ? ' <span class="st blocked">' + esc(t('⛔ not available')) + '</span>' : '') + '</div><div class="small muted">' + esc(t('{a} of {n} SKUs in stock · {b}', { a: b.avail, n: b.total, b: bx(b.boxes) })) + '</div></div>' +
+        (admin ? '<button type="button" class="btn small ' + (b.blocked ? 'green' : 'ghost-dark') + '" data-bblock="' + esc(b.brand) + '" data-on="' + (b.blocked ? '0' : '1') + '">' + esc(t(b.blocked ? 'Make available' : 'Mark not available')) + '</button>' : '') + '</div>';
+    }).join('') || '<div class="empty">' + esc(t('No stock yet.')) + '</div>';
+    var sel = $('#sBrand'), cur = sel.value;
+    sel.innerHTML = '<option value="">' + esc(t('All categories')) + '</option>' + bs.map(function (b) { return '<option value="' + esc(b.brand) + '">' + esc(b.brand) + '</option>'; }).join('');
+    sel.value = cur;
+    renderStockList();
+  }
+  function renderStockList() {
+    var q = $('#sSearch').value.trim().toLowerCase(), b = $('#sBrand').value, st = $('#sStatus').value, admin = S.user.role === 'admin';
+    var list = S.stock.filter(function (it) {
+      if (b && it.brand !== b) return false;
+      if (st === 'avail' && !inStock(it)) return false;
+      if (st && st !== 'avail' && it.status !== st) return false;
+      return matchItem(it, q);
+    });
+    var shown = list.slice(0, stockView.shown);
+    $('#sList').innerHTML = shown.length ? shown.map(function (it) {
+      return '<div class="srow"><div class="l"><div class="nm">' + esc(it.name) + '</div><div class="meta">SAP ' + esc(it.code) + ' · ' + esc(it.brand) + ' · ' + it.kgPerBox + ' ' + esc(t('kg/box')) +
+        (it.reserved ? ' · ' + esc(t('plant {a} − orders {b}', { a: fmt(it.plantStock), b: fmt(it.reserved) })) : '') + (it.note ? ' · ' + esc(t(it.note)) : '') + '</div>' +
+        (admin ? '<div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap"><button type="button" class="btn small ' + (it.blocked ? 'green' : 'ghost-dark') + '" data-sblock="' + it.code + '" data-on="' + (it.blocked ? '0' : '1') + '">' + esc(t(it.blocked ? 'Make available' : 'Mark not available')) + '</button><button type="button" class="btn small link" data-sedit="' + it.code + '">' + esc(t('Edit stock')) + '</button></div>' : '') +
+        '</div><div class="r"><b>' + fmt(it.available) + '</b><div class="small muted">' + esc(t('box')) + '</div><span class="st ' + it.status + '">' + esc(stLabel(it.status)) + '</span></div></div>';
+    }).join('') : '<div class="empty">' + esc(t('No SKU matches these filters.')) + '</div>';
+    $('#sMore').hidden = list.length <= stockView.shown;
+    $('#sMore').textContent = t('Show more ({n} left)', { n: list.length - stockView.shown });
+  }
+  function setBlock(type, key, on) {
+    var note = '';
+    if (on) { note = window.prompt(t('Reason shown to officers (optional)'), t(type === 'brand' ? 'Category not available' : 'Not available')); if (note === null) return; }
+    call('setBlock', { type: type, key: key, blocked: on, note: note }).then(function (r) {
+      if (!r.ok) { toast(r.error, 'err'); return; }
+      toast(t(on ? '{k} marked not available' : '{k} is available again', { k: key }));
+      loadStock(true).then(function () { renderStock(); renderOrderForm(); });
+    });
+  }
+  function editStock(code) {
+    var it = S.byCode[code]; if (!it) return;
+    var v = window.prompt(t('Plant stock (boxes) for {name}\nCurrent: {p} (open orders {r})', { name: it.name, p: it.plantStock, r: it.reserved }), it.plantStock);
+    if (v === null) return;
+    call('editStock', { code: code, plantStock: v }).then(function (r) { if (!r.ok) { toast(r.error, 'err'); return; } toast(t('Stock updated')); loadStock(true).then(renderStock); });
+  }
+
+  /* ---------- ORDERS VIEW ---------- */
+  var ordersInit = false;
+  function ordersTitle() { $('#ordersTitle').textContent = t(S.user.role !== 'officer' ? 'All orders & visits' : 'My orders & visits'); }
+  function initOrders() {
+    ordersTitle();
+    if (!ordersInit) { $('#oFrom').value = addDays(today(), -6); $('#oTo').value = today(); ordersInit = true; }
+    $('#oOfficer').hidden = S.user.role === 'officer';
+    loadOrders();
+  }
+  function loadOrders() {
+    var mgr = S.user.role !== 'officer', f = { from: $('#oFrom').value, to: $('#oTo').value, officer: $('#oOfficer').value, status: $('#oStatus').value };
+    $('#oList').innerHTML = '<div class="empty">' + esc(t('Loading…')) + '</div>';
+    call(mgr ? 'listOrders' : 'myOrders', f).then(function (r) {
+      if (!r.ok) { $('#oList').innerHTML = '<div class="err-box">' + esc(r.error) + '</div>'; return; }
+      S.orders = r.orders; S.selected = {};
+      if (mgr) renderOfficerSelect();
+      renderOrders();
+    });
+  }
+  function renderOfficerSelect() {
+    var sel = $('#oOfficer'), cur = sel.value, people = {};
+    (S.orders || []).forEach(function (o) { people[o.officerPhone] = o.officerName; });
+    if (S.team) S.team.people.forEach(function (p) { people[p.phone] = p.name; });
+    sel.innerHTML = '<option value="">' + esc(t('All officers')) + '</option>' + Object.keys(people).map(function (k) { return '<option value="' + esc(k) + '">' + esc(people[k]) + '</option>'; }).join('');
+    sel.value = cur;
+  }
+  function renderOrders() {
+    var mgr = S.user.role !== 'officer', list = S.orders || [];
+    if (!mgr && $('#oStatus').value) list = list.filter(function (o) { return o.status === $('#oStatus').value; });
+    var boxes = 0, kg = 0, pay = 0, withOrder = 0;
+    list.forEach(function (o) { if (o.status !== 'Cancelled') { boxes += o.totalBoxes; kg += o.totalKg; } pay += o.paymentAmount; if (o.totalBoxes > 0) withOrder++; });
+    $('#ordersSum').textContent = t('{v} visits · {o} with orders · {b} · {kg} kg · payment {p} (cancelled excluded from boxes)', { v: list.length, o: withOrder, b: bx(boxes), kg: fmt1(kg), p: fmt(pay) });
+    $('#oList').innerHTML = list.length ? list.map(function (o) {
+      var i = S.orders.indexOf(o);
+      return '<div class="ocard"><div class="h">' + (mgr ? '<input type="checkbox" data-osel="' + esc(o.orderId) + '"' + (S.selected[o.orderId] ? ' checked' : '') + ' aria-label="' + esc(t('Select')) + '">' : '') +
+        '<div class="main"><div class="nm">' + esc(o.partnerName) + ' <span class="small muted">' + esc(t(o.partnerTier)) + '</span></div>' +
+        '<div class="meta">' + esc(niceTs(o.createdAt)) + ' · ' + esc(o.orderId) + (mgr ? ' · 👤 ' + esc(o.officerName) : '') + '</div>' +
+        '<div class="meta">📍 ' + esc(o.location || '—') + (o.lat ? ' · <a href="' + mapUrl(o.lat, o.lng) + '" target="_blank" rel="noopener">' + esc(t('map')) + '</a>' : ' · <b style="color:var(--red)">' + esc(t('no GPS')) + '</b>') + '</div>' +
+        '<div class="meta"><b style="color:var(--ink)">' + esc(bx(o.totalBoxes)) + ' · ' + fmt1(o.totalKg) + ' kg</b>' + (o.paymentAmount ? ' · 💰 ' + fmt(o.paymentAmount) + ' ' + esc(t(o.paymentMode)) : '') + '</div></div>' +
+        '<span class="st ' + esc(o.status) + '">' + esc(t(o.status)) + '</span></div>' +
+        '<details><summary>' + esc(t('{n} SKU lines', { n: o.lines.length })) + (o.notes ? esc(t(' · notes')) : '') + '</summary>' + linesTable(o) +
+        (o.notes ? '<div class="small" style="margin-top:6px">🕵️ ' + esc(o.notes) + '</div>' : '') +
+        (o.statusBy ? '<div class="small muted" style="margin-top:4px">' + esc(t('Status {s} by {who} · {t}', { s: t(o.status), who: o.statusBy, t: niceTs(o.statusAt) })) + '</div>' : '') +
+        '<button class="btn small wa" type="button" data-oshare="' + i + '" style="margin-top:8px">' + esc(t('📲 Send on WhatsApp')) + '</button></details></div>';
+    }).join('') : '<div class="card empty">' + esc(t('No visits in this period.')) + '</div>';
+    updateBulk();
+  }
+  function linesTable(o) {
+    if (!o.lines.length) return '<div class="small muted">' + esc(t('Visit only — no SKUs.')) + '</div>';
+    return '<div class="tscroll"><table class="t"><tr><th>' + esc(t('SKU')) + '</th><th class="n">' + esc(t('Order')) + '</th><th class="n">' + esc(t('Shop')) + '</th><th>' + esc(t('Prev supply')) + '</th></tr>' + o.lines.map(function (l) {
+      return '<tr><td>' + esc(l.name) + '<div class="small muted">' + esc(l.code) + '</div></td><td class="n"><b>' + (l.orderBoxes || '') + '</b></td><td class="n">' + esc(l.shopStock) + '</td><td class="small">' +
+        (l.prevOrderBoxes !== '' ? esc(t('prev {n} · ', { n: l.prevOrderBoxes })) : '') + esc(t(l.supplyStatus)) + (l.supplyStatus !== 'Supplied' && l.shortReason ? ' · ' + esc(t(l.shortReason)) : '') + '</td></tr>';
+    }).join('') + '</table></div>';
+  }
+  function updateBulk() {
+    var n = Object.keys(S.selected).filter(function (k) { return S.selected[k]; }).length;
+    $('#bulkBar').hidden = !n; $('#bulkCount').textContent = t('{n} selected', { n: n });
+  }
+  function bulkStatus(status) {
+    var ids = Object.keys(S.selected).filter(function (k) { return S.selected[k]; });
+    if (!ids.length) return;
+    var warn = status === 'Despatched' ? t('\nDespatched orders leave the reservation and reduce plant stock in the app until the next upload.') : status === 'Cancelled' ? t('\nCancelled orders give their boxes back to available stock.') : '';
+    if (!window.confirm(t('Mark {n} order(s) as {s}?', { n: ids.length, s: t(status) }) + warn)) return;
+    call('setOrderStatus', { orderIds: ids, status: status }).then(function (r) {
+      if (!r.ok) { toast(r.error, 'err'); return; }
+      toast(t('{n} updated', { n: r.updated }) + (r.skipped.length ? t(' · skipped: ') + r.skipped.join(', ').replace(/\(already despatched\)/g, t('(already despatched)')) : ''));
+      S.stockAt = 0; loadOrders();
+    });
+  }
+  function exportCsv() {
+    if (!S.orders || !S.orders.length) { toast(t('Load orders first'), 'err'); return; }
+    var head = ['orderId', 'createdAt', 'status', 'officerName', 'officerPhone', 'zone', 'partnerName', 'partnerTier', 'partnerPhone', 'location', 'lat', 'lng', 'gpsAccuracyM', 'paymentAmount', 'paymentMode', 'paymentRef', 'orderRef', 'sapCode', 'sku', 'brand', 'kgPerBox', 'orderBoxes', 'orderKg', 'shopStockBoxes', 'prevOrderBoxes', 'supplyStatus', 'shortBoxes', 'shortReason', 'remark', 'notes'];
+    var rows = [head];
+    S.orders.forEach(function (o) {
+      var base = [o.orderId, o.createdAt, o.status, o.officerName, o.officerPhone, o.zone, o.partnerName, o.partnerTier, o.partnerPhone, o.location, o.lat, o.lng, o.accuracy, o.paymentAmount, o.paymentMode, o.paymentRef, o.orderRef];
+      if (!o.lines.length) rows.push(base.concat(['', '', '', '', '', '', '', '', '', '', '', '', o.notes]));
+      o.lines.forEach(function (l) { rows.push(base.concat([l.code, l.name, l.brand, l.kgPerBox, l.orderBoxes, Math.round(l.orderBoxes * l.kgPerBox * 100) / 100, l.shopStock, l.prevOrderBoxes, l.supplyStatus, l.shortBoxes, l.shortReason, l.remark, o.notes])); });
+    });
+    download('UDAY_orders_' + $('#oFrom').value + '_to_' + $('#oTo').value + '.csv', rows.map(function (r) { return r.map(csvCell).join(','); }).join('\n'));
+  }
+
+  /* ---------- TEAM VIEW ---------- */
+  var teamInit = false, map = null, mapLayer = null;
+  function initTeam() { if (!teamInit) { $('#tDate').value = today(); teamInit = true; } loadTeam(); }
+  function loadTeam() {
+    $('#teamPeople').innerHTML = '<div class="empty">' + esc(t('Loading…')) + '</div>';
+    call('teamSummary', { date: $('#tDate').value }).then(function (r) {
+      if (!r.ok) { $('#teamPeople').innerHTML = '<div class="err-box">' + esc(r.error) + '</div>'; return; }
+      S.team = r; renderTeam();
+    });
+  }
+  function renderTeam() {
+    var r = S.team, people = r.people, colors = {};
+    people.forEach(function (p, i) { colors[p.phone] = COLORS[i % COLORS.length]; });
+    var officers = people.filter(function (p) { return p.role === 'officer'; }), active = people.filter(function (p) { return p.visits > 0; });
+    var sum = people.reduce(function (s, p) { s.v += p.visits; s.o += p.orders; s.b += p.boxes; s.k += p.kg; s.pay += p.payment; return s; }, { v: 0, o: 0, b: 0, k: 0, pay: 0 });
+    $('#teamTiles').innerHTML = '<div class="tile"><span>' + esc(t('Officers active')) + '</span><b>' + active.length + '</b><small>' + esc(t('of {n} officers', { n: officers.length })) + '</small></div>' +
+      '<div class="tile"><span>' + esc(t('Visits')) + '</span><b>' + sum.v + '</b><small>' + esc(t('{n} with orders', { n: sum.o })) + '</small></div>' +
+      '<div class="tile"><span>' + esc(t('Boxes ordered')) + '</span><b>' + fmt(sum.b) + '</b><small>' + fmt1(sum.k) + ' kg</small></div>' +
+      '<div class="tile"><span>' + esc(t('Payment collected')) + '</span><b>' + fmt(sum.pay) + '</b><small>' + esc(niceDay(r.date)) + '</small></div>';
+    $('#teamPeople').innerHTML = people.length ? people.map(function (p) {
+      var idle = !p.visits;
+      return '<div class="pcard' + (idle ? ' idle' : '') + '"><span class="dot" style="background:' + colors[p.phone] + '"></span><div class="main"><div class="strong">' + esc(p.name) + ' <span class="small muted">' + esc(p.zone) + (p.active ? '' : esc(t(' · login off'))) + '</span></div>' +
+        (idle ? '<div class="small" style="color:var(--red);font-weight:700">' + esc(t('No visit recorded on this day')) + '</div>' :
+        '<div class="nums"><span>' + esc(t('Visits')) + ' <b>' + p.visits + '</b></span><span>' + esc(t('Orders')) + ' <b>' + p.orders + '</b></span><span>' + esc(t('Boxes')) + ' <b>' + fmt(p.boxes) + '</b></span><span>💰 <b>' + fmt(p.payment) + '</b></span></div>' +
+        '<div class="small muted">' + esc(t('First check-in {a} · last seen {b} · {loc}', { a: hhmm(p.firstAt), b: hhmm(p.lastAt), loc: p.lastLocation || '—' })) + (p.lastLat ? ' · <a href="' + mapUrl(p.lastLat, p.lastLng) + '" target="_blank" rel="noopener">' + esc(t('map')) + '</a>' : '') + '</div>' +
+        (p.noGps ? '<div class="small" style="color:var(--amber);font-weight:700">' + esc(t('{n} visit(s) without GPS', { n: p.noGps })) + '</div>' : '')) +
+        '<div class="small muted">' + esc(t('7 days: {v} visits · {b}', { v: p.weekVisits, b: bx(p.weekBoxes) })) + '</div></div></div>';
+    }).join('') : '<div class="empty">' + esc(t('No sales officers yet. Admin adds them in ⚙️ Admin › Team logins.')) + '</div>';
+    $('#teamVisits').innerHTML = r.visits.length ? '<div class="tscroll"><table class="t"><tr><th>' + esc(t('Time')) + '</th><th>' + esc(t('Officer')) + '</th><th>' + esc(t('Partner')) + '</th><th class="n">' + esc(t('Box')) + '</th><th>' + esc(t('Place')) + '</th></tr>' + r.visits.map(function (v) {
+      return '<tr><td class="nowrap">' + hhmm(v.createdAt) + '</td><td><span class="dot" style="display:inline-block;background:' + colors[v.officerPhone] + ';margin:0 4px 0 0;width:9px;height:9px"></span>' + esc(v.officerName) + '</td><td>' + esc(v.partnerName) + '<div class="small muted">' + esc(t(v.partnerTier)) + (v.status === 'Cancelled' ? esc(t(' · cancelled')) : '') + '</div></td><td class="n"><b>' + fmt(v.totalBoxes) + '</b></td><td class="small">' + esc(v.location) +
+        (v.lat ? ' <a href="' + mapUrl(v.lat, v.lng) + '" target="_blank" rel="noopener">' + esc(t('map')) + '</a>' : ' <b style="color:var(--red)">' + esc(t('no GPS')) + '</b>') + '</td></tr>';
+    }).join('') + '</table></div>' : '<div class="empty">' + esc(t('No visits recorded on this day.')) + '</div>';
+    renderMap(r.visits, colors);
+  }
+  function renderMap(visits, colors) {
+    var pts = visits.filter(function (v) { return v.lat && v.lng; }), el = $('#teamMap');
+    if (!pts.length) { el.hidden = true; return; }
+    el.hidden = false;
+    loadCss(LEAFLET_CSS);
+    loadScript(LEAFLET_JS).then(function () {
+      if (!map) {
+        map = L.map(el, { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(map);
+        mapLayer = L.layerGroup().addTo(map);
+      }
+      mapLayer.clearLayers();
+      var bounds = [];
+      pts.forEach(function (v) {
+        var ll = [Number(v.lat), Number(v.lng)]; bounds.push(ll);
+        L.circleMarker(ll, { radius: 8, color: '#fff', weight: 2, fillColor: colors[v.officerPhone] || '#E31B23', fillOpacity: 0.95 }).addTo(mapLayer)
+          .bindPopup('<b>' + esc(v.officerName) + '</b><br>' + hhmm(v.createdAt) + ' · ' + esc(v.partnerName) + '<br>' + esc(bx(v.totalBoxes)) + ' · ±' + esc(v.accuracy) + ' m');
+      });
+      map.invalidateSize();
+      if (bounds.length === 1) map.setView(bounds[0], 15); else map.fitBounds(bounds, { padding: [24, 24] });
+    }).catch(function () { el.hidden = true; });
+  }
+
+  /* ---------- ADMIN VIEW ---------- */
+  function initAdmin() {
+    if (!$('#uAsOf').value) $('#uAsOf').value = today();
+    var s = S.settings;
+    $('#gCompany').value = s.companyName || ''; $('#gPw').value = s.defaultPassword || ''; $('#gDesk').value = s.orderDeskPhone || ''; $('#gDeskLabel').value = s.orderDeskLabel || '';
+    $('#gLow').value = s.lowStockBoxes || 10; $('#gCc').value = s.countryCode || '225';
+    loadUsers(); renderLinkBox();
+  }
+  // Only a Google /exec link (or an https copy for option B) can be opened by the team; the demo's file:/// or localhost address cannot.
+  function appLink() {
+    if (mode() === 'google') return (S.info && S.info.appUrl) || '';
+    if (mode() === 'http' && location.protocol === 'https:') return location.href.split('#')[0];
+    return '';
+  }
+  function renderLinkBox() {
+    var link = appLink(), info = S.info || {};
+    var modes = { google: 'Live (Google Sheet)', http: 'Live (API link)', demo: 'Demo on this device' };
+    var kv = '<div class="kv"><span>' + esc(t('App link')) + '</span><b style="word-break:break-all">' + esc(link || '—') + '</b>' + (info.sheetUrl ? '<span>Google Sheet</span><a href="' + esc(info.sheetUrl) + '" target="_blank" rel="noopener">' + esc(t('Open the data sheet')) + '</a>' : '') + '<span>Mode</span><b>' + esc(t(modes[mode()] || mode())) + '</b></div>';
+    if (!link) {
+      $('#linkBox').innerHTML = '<div class="warn-box small">' + t('<b>No team link yet.</b> This is the demo copy on this computer, so its address (file:/// or localhost) only opens here. The link your team uses is created in Google: follow steps 1–5 of SETUP GUIDE.md, then open the app from the <b>/exec</b> link Google gives you. This box will then show that link with a WhatsApp share button.') + '</div>' + kv;
+      return;
+    }
+    // Officers read French, the admin may not: the team message carries both languages.
+    var share = 'Bonjour l’équipe, voici notre appli de vente Parle UDAY pour les visites, le stock usine et les commandes.\n' +
+      '1) Ouvrez : ' + link + '\n2) Connectez-vous avec votre numéro WhatsApp et le mot de passe que je vous ai envoyé.\n3) Autorisez la localisation (GPS) quand l’appli le demande.\n4) Astuce : menu du navigateur › « Ajouter à l’écran d’accueil ».\n\n' +
+      'Hello team, this is our Parle UDAY sales app for visits, plant stock and orders.\n1) Open: ' + link + '\n2) Log in with your WhatsApp number and the password I sent you.\n3) Allow location when asked (GPS check-in).\n4) Tip: browser menu › “Add to Home Screen”.';
+    $('#linkBox').innerHTML = kv +
+      '<div class="btn-row" style="margin-top:10px"><button class="btn dark" type="button" id="copyLink">' + esc(t('📋 Copy link')) + '</button><a class="btn wa" target="_blank" rel="noopener" href="' + waLink('', share) + '">' + esc(t('📲 Share link on WhatsApp')) + '</a></div>' +
+      '<p class="small muted">' + t('Share the <b>link</b>, never the HTML file: a file opened inside WhatsApp cannot run the app or read GPS.') + '</p>';
+    $('#copyLink').addEventListener('click', function () { copyText(link); });
+  }
+  function loadUsers() {
+    call('listUsers').then(function (r) {
+      if (!r.ok) { $('#userList').innerHTML = '<div class="err-box">' + esc(r.error) + '</div>'; return; }
+      S.users = r.users; renderUsers();
+    });
+  }
+  function renderUsers() {
+    $('#userCount').textContent = S.users.length;
+    $('#userList').innerHTML = S.users.map(function (u, i) {
+      return '<div class="urow' + (u.active ? '' : ' off') + '"><div class="main"><div><b>' + esc(u.name) + '</b> <span class="role ' + u.role + '">' + esc(roleLabel(u.role)) + '</span>' + (u.active ? '' : '<span class="small">' + esc(t(' · login off')) + '</span>') + (u.mustChange ? '<span class="small muted">' + esc(t(' · must set password')) + '</span>' : '') + '</div>' +
+        '<div class="small muted">' + esc(u.phone) + (u.zone ? ' · ' + esc(u.zone) : '') + esc(t(' · last login {t}', { t: u.lastLogin ? niceTs(u.lastLogin) : t('never') })) + '</div></div>' +
+        '<button class="btn small ghost-dark" type="button" data-uedit="' + i + '">' + esc(t('Edit')) + '</button></div>';
+    }).join('');
+  }
+  function clearUserForm() {
+    ['#aPhone', '#aName', '#aZone', '#aPw'].forEach(function (s) { $(s).value = ''; });
+    $('#aRole').value = 'officer'; $('#aMust').checked = true; $('#aActive').checked = true; $('#aPhone').disabled = false;
+    setPh($('#aPw'), 'Blank = general password'); msg('#userMsg', ''); $('#userShare').innerHTML = '';
+  }
+  function editUser(u) {
+    clearUserForm();
+    $('#aPhone').value = u.phone; $('#aPhone').disabled = true; $('#aName').value = u.name; $('#aRole').value = u.role; $('#aZone').value = u.zone;
+    $('#aActive').checked = u.active; $('#aMust').checked = false; setPh($('#aPw'), 'Blank = keep current password');
+    $('#aPhone').scrollIntoView({ block: 'center' });
+  }
+  function saveUser() {
+    var p = { phone: $('#aPhone').value.trim(), name: $('#aName').value.trim(), role: $('#aRole').value, zone: $('#aZone').value.trim(), password: $('#aPw').value.trim(), mustChange: $('#aMust').checked, active: $('#aActive').checked };
+    $('#btnUserSave').disabled = true;
+    call('saveUser', p).then(function (r) {
+      $('#btnUserSave').disabled = false;
+      if (!r.ok) { msg('#userMsg', r.error, 'err'); return; }
+      var pw = p.password || (r.saved === 'created' ? S.settings.defaultPassword : ''), share = '';
+      if (r.passwordChanged && p.active) {
+        var link = appLink(), pwText = pw || '(…)';
+        var text = 'Bonjour ' + p.name + ',\nVotre accès à l’appli de vente Parle UDAY :\n• Lien : ' + (link || '(lien à venir)') + '\n• Identifiant : ' + r.phone + '\n• Mot de passe : ' + pwText + (p.mustChange ? '\nL’appli vous demandera de choisir votre propre mot de passe.' : '') + '\nAutorisez la localisation quand l’appli le demande.\n\n' +
+          'Hello ' + p.name + ',\nYour Parle UDAY sales app login:\n• Link: ' + (link || '(link to follow)') + '\n• Login: ' + r.phone + '\n• Password: ' + pwText + (p.mustChange ? '\nThe app will ask you to choose your own password.' : '') + '\nPlease allow location when the app asks.';
+        share = link ? '<div class="ok-box small">' + esc(t('Send the login to {n}:', { n: p.name })) + ' <a class="btn small wa" style="margin-top:6px" target="_blank" rel="noopener" href="' + waLink(r.phone, text) + '">' + esc(t('📲 Send on WhatsApp')) + '</a></div>' :
+          '<div class="warn-box small">' + esc(t('Login saved. Send it to {n} after the Google setup, from the live app: this demo has no link the team can open.', { n: p.name })) + '</div>';
+      }
+      clearUserForm();
+      $('#userShare').innerHTML = share;
+      msg('#userMsg', t(r.saved === 'created' ? 'Login created for {n}' : 'Saved {n}', { n: p.name }), 'ok');
+      loadUsers();
+      if (r.phone === S.user.phone) call('me').then(function (m) { if (m.ok) { S.user = m.user; headerText(); } });
+    });
+  }
+  function saveSettings() {
+    var p = { companyName: $('#gCompany').value.trim(), defaultPassword: $('#gPw').value.trim(), orderDeskPhone: $('#gDesk').value.trim(), orderDeskLabel: $('#gDeskLabel').value.trim(), lowStockBoxes: $('#gLow').value, countryCode: digits($('#gCc').value) || '225' };
+    call('saveSettings', p).then(function (r) {
+      if (!r.ok) { msg('#settingsMsg', r.error, 'err'); return; }
+      S.settings = r.settings; S.companyName = r.settings.companyName || 'Parle UDAY'; headerText(); msg('#settingsMsg', t('Settings saved'), 'ok'); S.stockAt = 0;
+    });
+  }
+
+  /* stock upload */
+  function findCol(hdr, patterns) {
+    for (var p = 0; p < patterns.length; p++) for (var i = 0; i < hdr.length; i++) if (patterns[p].test(hdr[i]) && !/value|valeur|amount/.test(hdr[i])) return i;
+    return -1;
+  }
+  function detectStock(rows) {
+    for (var h = 0; h < Math.min(rows.length, 15); h++) {
+      var hdr = (rows[h] || []).map(function (x) { return String(x).trim().toLowerCase(); });
+      var c = findCol(hdr, [/^material$/, /^material\s*(no|number|code)\.?$/, /^sap\s*code$/, /^sku\s*code$/, /^(item\s*|article\s*)?code$/, /^article$/, /^material/]);
+      var q = findCol(hdr, [/^closing\s*stock$/, /^closing\s*(qty|quantity|stock\s*qty)/, /^available/, /^closing/, /^(stock|qty|quantity|boxes|cartons)$/, /stock\s*(qty|quantity)/]);
+      if (c < 0 || q < 0 || c === q) continue;
+      var dsc = findCol(hdr, [/^material\s*desc/, /desc/, /^(sku|item|product)?\s*name$/]);
+      var items = [];
+      for (var r = h + 1; r < rows.length; r++) {
+        var row = rows[r] || [], code = String(row[c] === undefined ? '' : row[c]).trim().replace(/\.0+$/, '');
+        if (!code || !/\d/.test(code)) continue;
+        items.push({ code: code, description: dsc >= 0 ? String(row[dsc] || '').trim() : '', qty: Math.max(0, Number(row[q]) || 0) });
+      }
+      return { ok: true, items: items, cols: { code: rows[h][c], qty: rows[h][q], desc: dsc >= 0 ? rows[h][dsc] : '—' }, headerRow: h + 1 };
+    }
+    return { ok: false, error: 'Could not find a Material (SAP code) column and a Closing Stock column in the first rows of the file.' };
+  }
+  function onFile(file) {
+    if (!file) return;
+    $('#uPreview').innerHTML = ''; S.upload = null; msg('#uMsg', t('Reading {f}…', { f: file.name }));
+    loadScript(XLSX_URL).then(function () {
+      return file.arrayBuffer ? file.arrayBuffer() : new Promise(function (res) { var fr = new FileReader(); fr.onload = function () { res(fr.result); }; fr.readAsArrayBuffer(file); });
+    }).then(function (buf) {
+      var wb = XLSX.read(buf, { type: 'array' }), ws = wb.Sheets[wb.SheetNames[0]];
+      showUpload(file.name, wb.SheetNames[0], detectStock(XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: '' })));
+    }).catch(function (e) { msg('#uMsg', t('Could not read the file: {e}', { e: e && e.message ? e.message : e }), 'err'); });
+  }
+  function showUpload(fileName, sheetName, res) {
+    if (!res.ok) { msg('#uMsg', t(res.error), 'err'); return; }
+    msg('#uMsg', '');
+    var known = {}, codes = {}; S.stock.forEach(function (it) { known[it.code] = true; });
+    var total = 0, pos = 0, fresh = [];
+    res.items.forEach(function (it) { total += it.qty; if (it.qty > 0) pos++; codes[it.code] = true; if (!known[it.code]) fresh.push(it); });
+    var missing = S.stock.filter(function (it) { return !codes[it.code]; });
+    var top = res.items.slice().sort(function (a, b) { return b.qty - a.qty; }).slice(0, 5);
+    S.upload = { fileName: fileName, sheetName: sheetName, res: res, items: res.items };
+    $('#uPreview').innerHTML = '<div class="warn-box small"><b>' + esc(t('Check before upload')) + '</b><div class="kv" style="margin-top:6px"><span>' + esc(t('File')) + '</span><b>' + esc(fileName) + ' › ' + esc(sheetName) + '</b><span>' + esc(t('Columns used')) + '</span><b>' + esc(res.cols.code) + ' · ' + esc(res.cols.desc) + ' · ' + esc(res.cols.qty) + '</b>' +
+      '<span>' + esc(t('SKU rows')) + '</span><b>' + esc(t('{n} ({p} with stock)', { n: res.items.length, p: pos })) + '</b><span>' + esc(t('Total boxes')) + '</span><b>' + fmt(total) + '</b><span>' + esc(t('New SKUs')) + '</span><b>' + fresh.length + (fresh.length ? ' — ' + esc(fresh.slice(0, 3).map(function (f) { return f.description || f.code; }).join(', ')) : '') + '</b>' +
+      '<span>' + esc(t('In app, not in file')) + '</span><b>' + missing.length + '</b><span>' + esc(t('Biggest')) + '</span><b>' + top.map(function (x) { return esc(x.description || x.code) + ' ' + fmt(x.qty); }).join(' · ') + '</b></div></div>' +
+      '<button class="btn red block" type="button" id="btnUpload">' + esc(t('⬆ Upload {n} SKUs as stock of {d}', { n: res.items.length, d: niceDay($('#uAsOf').value) })) + '</button>';
+    $('#btnUpload').addEventListener('click', doUpload);
+  }
+  function doUpload() {
+    if (!S.upload) return;
+    $('#btnUpload').disabled = true; msg('#uMsg', t('Uploading…'));
+    call('uploadStock', { fileName: S.upload.fileName, stockAsOf: $('#uAsOf').value, items: S.upload.items, zeroMissing: $('#uZero').checked }).then(function (r) {
+      if (!r.ok) { $('#btnUpload').disabled = false; msg('#uMsg', r.error, 'err'); return; }
+      msg('#uMsg', t('✅ Uploaded {n} SKUs · {b} · {m} matched · {nw} new{z}. Officers see it now.', { n: r.skuCount, b: bx(r.totalBoxes), m: r.matched, nw: r.newSkus.length, z: r.zeroed ? t(' · {z} set to 0', { z: r.zeroed }) : '' }), 'ok');
+      $('#uPreview').innerHTML = ''; $('#uFile').value = ''; S.upload = null;
+      loadStock(true).then(renderOrderForm);
+    });
+  }
+
+  /* ---------- events ---------- */
+  function on(sel, ev, fn) { var el = $(sel); if (el) el.addEventListener(ev, fn); }
+  function bind() {
+    document.addEventListener('click', function (e) { var b = e.target.closest('[data-lang]'); if (b) setLang(b.getAttribute('data-lang')); });
+    on('#btnLogin', 'click', doLogin);
+    on('#lPw', 'keydown', function (e) { if (e.key === 'Enter') doLogin(); });
+    on('#btnShowPw', 'click', function () { var i = $('#lPw'); i.type = i.type === 'password' ? 'text' : 'password'; this.textContent = t(i.type === 'password' ? 'Show' : 'Hide'); });
+    on('#btnSetup', 'click', doSetup);
+    on('#btnPwSave', 'click', savePw);
+    on('#btnPwCancel', 'click', function () { show('shell'); });
+    on('#btnMyPw', 'click', function () { openPw(false); });
+    on('#btnLogout', 'click', function () { if (window.confirm(t('Log out of the app on this phone?'))) logout(); });
+    on('#btnConnect', 'click', function () {
+      var u = $('#cUrl').value.trim();
+      if (!/^https:\/\/script\.google(usercontent)?\.com\//.test(u)) { msg('#connectMsg', t('Paste the full https://script.google.com/…/exec link.'), 'err'); return; }
+      store.set('uday_api_url', u); boot();
+    });
+    on('#demoReset', 'click', function (e) { e.preventDefault(); if (window.confirm(t('Delete all demo data on this device and start again?'))) { DemoDB.reset(); store.del('uday_token'); location.reload(); } });
+    on('#tabs', 'click', function (e) { var b = e.target.closest('[data-view]'); if (b) go(b.getAttribute('data-view')); });
+
+    // order form
+    on('#tierSeg', 'click', function (e) { var b = e.target.closest('[data-tier]'); if (!b) return; S.draft.tier = b.getAttribute('data-tier'); saveDraft(); $$('#tierSeg button').forEach(function (x) { x.classList.toggle('on', x === b); }); });
+    var fields = { '#fPartner': 'partnerName', '#fPartnerPhone': 'partnerPhone', '#fOrderRef': 'orderRef', '#fLocation': 'location', '#fPay': 'paymentAmount', '#fPayMode': 'paymentMode', '#fPayRef': 'paymentRef', '#fNotes': 'notes' };
+    Object.keys(fields).forEach(function (sel) {
+      on(sel, sel === '#fPayMode' ? 'change' : 'input', function () { S.draft[fields[sel]] = this.value; if (sel === '#fLocation') S.draft.locationAuto = false; saveDraft(); if (sel === '#fPay') renderBar(); if (sel === '#fPartner') suggestPartners(); });
+    });
+    on('#fPartner', 'focus', suggestPartners);
+    on('#fPartner', 'blur', function () { setTimeout(function () { $('#partnerSuggest').hidden = true; }, 200); });
+    on('#partnerSuggest', 'mousedown', function (e) { e.preventDefault(); });
+    on('#partnerSuggest', 'click', function (e) { var b = e.target.closest('[data-partner]'); if (b) pickPartner($('#partnerSuggest')._list[+b.getAttribute('data-partner')]); });
+    on('#zoneChips', 'click', function (e) { var b = e.target.closest('[data-zone]'); if (!b) return; S.draft.location = b.getAttribute('data-zone'); S.draft.locationAuto = false; $('#fLocation').value = S.draft.location; saveDraft(); });
+    on('#noteChips', 'click', function (e) { var b = e.target.closest('[data-note]'); if (!b) return; var el = $('#fNotes'); el.value = (el.value ? el.value.trim() + ' ' : '') + t(NOTE_TAGS[+b.getAttribute('data-note')]); S.draft.notes = el.value; saveDraft(); });
+    on('#btnGps', 'click', function () { captureGps(false); });
+    on('#qBrand', 'change', function () { renderSkuSelect(); });
+    on('#qSearch', 'input', function () { renderSkuSelect(); });
+    on('#qAvailOnly', 'change', function () { renderSkuSelect(); });
+    on('#qSku', 'change', function () { loadQuick(false); });
+    on('#qShop', 'input', quickHints); on('#qOrder', 'input', quickHints);
+    on('#qStatus', 'change', toggleDrawer);
+    on('#btnAddLine', 'click', addLine);
+    on('#visitLines', 'click', function (e) {
+      var ed = e.target.closest('[data-edit]'), del = e.target.closest('[data-del]');
+      if (ed) { var code = ed.getAttribute('data-edit'); $('#qBrand').value = 'ALL'; $('#qSearch').value = ''; S.quickCode = null; renderSkuSelect(code); if ($('#qSku').value !== code) { $('#qAvailOnly').checked = false; renderSkuSelect(code); } $('#qSku').scrollIntoView({ block: 'center' }); }
+      if (del) { var c = del.getAttribute('data-del'); S.draft.lines = S.draft.lines.filter(function (l) { return l.code !== c; }); saveDraft(); renderVisit(); renderBar(); renderSkuSelect(); if (!$('#browseBox').hidden) renderBrowse(); }
+    });
+    on('#btnBrowse', 'click', function () { var bx2 = $('#browseBox'); bx2.hidden = !bx2.hidden; this.textContent = t(bx2.hidden ? 'Show list' : 'Hide list'); if (!bx2.hidden) { browse.shown = PAGE; renderBrowse(); } });
+    on('#bSearch', 'input', function () { browse.shown = PAGE; renderBrowse(); });
+    on('#bAvailOnly', 'change', function () { browse.shown = PAGE; renderBrowse(); });
+    on('#bBrands', 'click', function (e) { var b = e.target.closest('[data-bbrand]'); if (!b) return; browse.brand = b.getAttribute('data-bbrand'); browse.shown = PAGE; renderBrowse(); });
+    on('#bMore', 'click', function () { browse.shown += PAGE; renderBrowse(); });
+    on('#bList', 'change', function (e) { if (e.target.matches('[data-b]')) browseInput(e.target); });
+    on('#bList', 'input', function (e) { if (e.target.matches('[data-b]')) browseInput(e.target); });
+    on('#btnPreview', 'click', preview);
+    on('#btnSubmit', 'click', submit);
+    on('#btnReset', 'click', resetVisit);
+    on('#sheetClose', 'click', closeSheet);
+    on('#sheet', 'click', function (e) { if (e.target === this) closeSheet(); });
+
+    // stock
+    on('#btnStockRefresh', 'click', function () { loadStock(true).then(renderStock); });
+    on('#btnCatToggle', 'click', function () { var c = $('#catList'); c.hidden = !c.hidden; this.textContent = t(c.hidden ? 'Show' : 'Hide'); });
+    on('#sSearch', 'input', function () { stockView.shown = 60; renderStockList(); });
+    on('#sBrand', 'change', function () { stockView.shown = 60; renderStockList(); });
+    on('#sStatus', 'change', function () { stockView.shown = 60; renderStockList(); });
+    on('#sMore', 'click', function () { stockView.shown += 60; renderStockList(); });
+    on('#v-stock', 'click', function (e) {
+      var bb = e.target.closest('[data-bblock]'), sb = e.target.closest('[data-sblock]'), se = e.target.closest('[data-sedit]');
+      if (bb) setBlock('brand', bb.getAttribute('data-bblock'), bb.getAttribute('data-on') === '1');
+      if (sb) setBlock('sku', sb.getAttribute('data-sblock'), sb.getAttribute('data-on') === '1');
+      if (se) editStock(se.getAttribute('data-sedit'));
+    });
+
+    // orders
+    on('#btnOrdersLoad', 'click', loadOrders);
+    on('#btnCsv', 'click', exportCsv);
+    on('#oList', 'change', function (e) { var c = e.target.closest('[data-osel]'); if (c) { S.selected[c.getAttribute('data-osel')] = c.checked; updateBulk(); } });
+    on('#oList', 'click', function (e) {
+      var b = e.target.closest('[data-oshare]'); if (!b) return;
+      var o = S.orders[+b.getAttribute('data-oshare')];
+      openSheet(function () { sheetHtml(t('Send order {id}', { id: o.orderId }), sendBlock()); wireSend(o); });
+    });
+    on('#bulkBar', 'click', function (e) { var b = e.target.closest('[data-bulk]'); if (b) bulkStatus(b.getAttribute('data-bulk')); });
+    on('#bulkClear', 'click', function () { S.selected = {}; renderOrders(); });
+
+    // team
+    on('#btnTeamRefresh', 'click', loadTeam);
+    on('#tDate', 'change', loadTeam);
+
+    // admin
+    on('#uFile', 'change', function () { onFile(this.files && this.files[0]); });
+    on('#btnUserSave', 'click', saveUser);
+    on('#btnUserClear', 'click', clearUserForm);
+    on('#userList', 'click', function (e) { var b = e.target.closest('[data-uedit]'); if (b) editUser(S.users[+b.getAttribute('data-uedit')]); });
+    on('#btnSettingsSave', 'click', saveSettings);
+  }
+
+  window.UDAY = { state: S, call: call, detectStock: detectStock, showUpload: showUpload, buildMessage: buildMessage, go: go, setLang: setLang, missing: MISSING };
+  bind();
+  buildLists();
+  applyLang();
+  $('#btnShowPw').textContent = t('Show');
+  boot();
+})();
+</script>
+</body>
+</html>
